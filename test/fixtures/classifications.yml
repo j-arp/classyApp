@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+fresh:
+  name: Freshman
+  year: 1
+
+soph:
+  name: Sophomore
+  year: 2

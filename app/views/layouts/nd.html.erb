@@ -1,0 +1,54 @@
+
+
+<!DOCTYPE html>
+<!-- saved from url=(0091)https://login.nd.edu/cas/login?service=https%3A%2F%2Fsakailogin.nd.edu%2Fxsl-portal%2Flogin -->
+<html class="no-js" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+  <title>Mendoza Student Directory</title>
+ </head>
+
+<body id="cas" class=" hasGoogleVoiceExt">
+  <div id="wrapper" class="cf">
+
+   
+
+    <div id="header" role="banner">
+      <h2><a href="http://nd.edu/">University of Notre Dame</a></h2>
+      <h1>Mendoza Student Directory</h1>
+    </div>
+    <div id="top-menu">
+    
+    </div>
+    <div id="content" role="main" class="cf">
+
+<% unless flash[:message].nil? %>
+	<p> <%= flash[:message] %></p>
+<% end %>
+
+
+        <%= yield %>
+
+    </div> <!-- #content -->
+    <div id="footer" class="vcard adr" role="contentinfo">
+      <p id="copyright" class="url fn org">
+        <a href="http://nd.edu/copyright/">Copyright</a> © 2012 <a href="http://nd.edu/" class="url fn org">University of Notre Dame.</a>
+        <span class="address">
+          <span class="locality">Notre Dame</span>, <abbr class="region" title="Indiana">IN</abbr>
+          <span class="postal-code">46556</span> <span class="country-name">USA</span>
+          <span class="geo">
+            <abbr class="latitude" title="41.703234">41.703234</abbr>
+            <abbr class="longitude" title="-86.238985">-86.238985</abbr>
+          </span>
+        </span>
+      </p>
+      <a id="ndmark" href="http://nd.edu/"><img src="/assets/ndmark300.png" class="ndmark" alt="University of Notre Dame"></a>
+    </div> <!-- #footer -->
+  </div> <!-- #wrapper -->
+
+
+</body></html>

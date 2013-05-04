@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+sp:
+  name: Spring
+  order: 1
+
+fa:
+  name: Fall
+  order: 2

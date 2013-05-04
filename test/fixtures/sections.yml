@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+mgti1:
+  name: MyString
+  number: 1
+  year: 2013
+  semester: sp
+  course: mgti
+
+two:
+  name: MyString
+  number: 1
+  year: 2013
+  semester: fa
+  course: mgti

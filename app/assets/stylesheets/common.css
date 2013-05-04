@@ -1,0 +1,57 @@
+
+div.badge{border:2px solid #000066}
+div.badge img.profile{margin:6px;}
+ul.item-list>li{display:inline;}
+
+ul.item-list>li>div.item, div.item-list>div.item{
+	float:left; 
+	width:28%; 
+	background-color: #f2f2f2; 
+	border: thin solid #ccc; 
+	border-radius: 6px; padding:10px; margin:1%;
+	min-height:150px;
+	}
+
+
+div.item h3, div.item p{
+	 margin:2px 0px 2px 0px;
+	}
+
+
+div.indent{}
+
+
+
+ul.item-list div.actions, div.item-list div.actions{min-height:30px; float:right;}
+
+.deflate{padding:0px;margin:0px;}
+
+
+@media only screen and (max-width:800px) {
+
+	ul.item-list>li>div.item, div.item-list>div.item{
+	    float:left; 
+	    width:46%; 
+	    margin-right:0px; 
+	    background-color: #f2f2f2; 
+	    border: thin solid #ccc; 
+	    border-radius: 6px; 
+	    padding:1%; 
+	    margin-bottom:20px;
+	    }
+}
+
+
+@media only screen and (max-width:480px) {
+
+	ul.item-list>li>div.item, div.item-list>div.item{
+	    float:left; 
+	    width:96%; 
+	    margin-right:0px; 
+	    background-color: #f2f2f2; 
+	    border: thin solid #000; 
+	    border-radius: 6px; 
+	    padding:1%; 
+	    margin-bottom:20px;
+	    }
+}

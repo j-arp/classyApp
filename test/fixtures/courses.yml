@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+mgti:
+  name: Building Web Applications
+  code: mgti
+
+mgti2:
+  name: Breaking Web Applications
+  code: mgti2

@@ -1,0 +1,40 @@
+
+div#top-menu{float:right;}
+
+div#top-menu > ul{}
+div#top-menu > ul li {display: inline; margin-right:10px;}
+
+table{
+	margin:5px 0px 10px 0px; padding:0px;
+	border-spacing:0px; border:thin solid #ccc; border-radius: 4px;
+	}
+tr{}
+tr.dark{background-color: #f2f2f2}
+th, td{padding:4px ;}
+th{background-color:#000066;text-align: left; color:#f2f2f2;}
+td{padding:6px;}
+
+tr.dark{background-color: #f2f2f2}
+div.field{float:left; width:100%;}
+label{display:inline; min-width:125px; text-align:right; float:left; margin-right:10px; padding-top:3px;}
+div.indent{margin-left:135px;}
+label.no-indent{min-width:0px; margin-left:10px;}
+input, select {float:left;}
+form div.form-section{margin-bottom:40px; float:left; width:100%;}
+
+ul.light-block{}
+ul.light-block li{margin:5px 0px 20px 30px; padding:10px; border-bottom:thin solid #f2f2f2; list-style-type: none}
+
+#new-team-form{}
+
+form div.actions{margin-left:135px;}
+div.nav-actions{text-align:right; width:100%;}
+
+input{border-radius:4px; padding:2px;}
+select{border-radius:4px; padding:2px;}
+
+div.embedded-form{float:left; width:98%; margin-left:2%;}
+div.embedded-form form{float:left;background-color: #f2f2f2; padding:6px; border-radius:6px;}
+ 
+div.note-list{float:left; margin-left:10px;}
+div.note-list p{border-left:3px solid #f2f2f2; padding:6px;}

@@ -1,0 +1,20 @@
+<h2>  <%= @student.full_name %></h2>
+
+<%= image_tag @student.image_url, :width => 200 %>
+
+<p>
+  <b>Netid:</b>
+  <%= @student.netid %>
+</p>
+
+
+<p>
+  <b>Classification:</b>
+  <%= @student.classification.name %>
+</p>
+
+<p>
+  <b>Section:</b>
+  <%= @student.section %>
+</p>
+

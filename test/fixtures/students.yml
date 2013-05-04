@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+jarp:
+  first: Jonathan
+  last: Arp
+  netid: jarp
+  classification: fresh
+  image: jarpold.jpg
+  section: mgti1
+
+larp:
+  first: Lily
+  last: Arp
+  netid: larp
+  classification: soph
+  image: larpold.jpg
+  section: mgti1 

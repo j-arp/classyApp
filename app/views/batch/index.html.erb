@@ -1,0 +1,18 @@
+
+
+<%= form_tag process_batch_path, :multipart => true do %>
+
+<p>
+	<%= select_tag 'section_id', 
+			options_from_collection_for_select(@sections, 'id', 'to_s') 
+	%>
+
+<p>
+	<%= label_tag :file, "file to upload" %>
+	<%= file_field_tag :file %>
+</p>
+
+<p>
+	<%= submit_tag "Upload" %>
+</p>
+<% end %>
