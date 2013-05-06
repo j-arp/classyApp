@@ -35,6 +35,12 @@
     <%= f.label :section %><br />
     <%= f.collection_select :section_id, Section.all, :id, :to_s %>
   </div>
+
+<div class="field">
+    <%= f.label :repo %><br />
+    <%= f.text_field :repo %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

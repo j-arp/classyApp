@@ -3,7 +3,9 @@
 mgti:
   name: Building Web Applications
   code: mgti
+  number: 40660
 
 mgti2:
   name: Breaking Web Applications
   code: mgti2
+  number: 40661

@@ -23,7 +23,8 @@ class ImporterTest < ActiveSupport::TestCase
     #puts  @importer.array
     assert_instance_of Hash, @importer.array[0] , "should be an hash"
     #puts @importer.array[1]
-    assert_equal "aadams6", @importer.array[0][:netid]
+    assert_equal "test1", @importer.array[0][:netid]
+    assert_equal "test2", @importer.array[1][:netid]
   end
 
 end

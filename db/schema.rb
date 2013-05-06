@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130501190714) do
+ActiveRecord::Schema.define(:version => 20130506124710) do
 
   create_table "classifications", :force => true do |t|
     t.string   "name"
@@ -25,7 +25,27 @@ ActiveRecord::Schema.define(:version => 20130501190714) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.string   "code"
+    t.integer  "number"
   end
+
+  create_table "members", :force => true do |t|
+    t.integer  "team_id"
+    t.integer  "student_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "members", ["student_id"], :name => "index_members_on_student_id"
+  add_index "members", ["team_id"], :name => "index_members_on_team_id"
+
+  create_table "notes", :force => true do |t|
+    t.string   "content"
+    t.integer  "student_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "notes", ["student_id"], :name => "index_notes_on_student_id"
 
   create_table "sections", :force => true do |t|
     t.string   "name"
@@ -56,8 +76,17 @@ ActiveRecord::Schema.define(:version => 20130501190714) do
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
     t.integer  "classification_id"
+    t.string   "repo"
+    t.string   "preferred_name"
   end
 
   add_index "students", ["section_id"], :name => "index_students_on_section_id"
+
+  create_table "teams", :force => true do |t|
+    t.string   "name"
+    t.string   "repo"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
 end

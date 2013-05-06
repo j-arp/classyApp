@@ -9,8 +9,8 @@ class BatchController < ApplicationController
 	   
     if params.has_key? :clear
       #puts "clear out all for #{params[:section_id]}"
-
-      Student.delete_all(["section_id = ?", params[:section_id]])
+      Student.delete_all
+      #(["section_id = ?", params[:section_id]])
     end
 
     unless import_file.original_filename.nil?

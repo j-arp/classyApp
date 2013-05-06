@@ -31,7 +31,6 @@ class BatchControllerTest < ActionController::TestCase
     test_file = "test/resources/nostudents.csv"
     file = Rack::Test::UploadedFile.new(test_file, "text/csv")
     get :import ,{:file =>file, :clear => true, :section_id => @section.id}
-    puts @teststudents[0].full_name
     assert_equal 0, @teststudents.count
 
   

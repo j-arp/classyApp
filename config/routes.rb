@@ -1,4 +1,13 @@
 ClassyApp::Application.routes.draw do
+  resources :notes
+
+
+  resources :members
+
+
+  resources :teams
+
+
   resources :classifications
 
 
@@ -18,6 +27,7 @@ ClassyApp::Application.routes.draw do
 
   resources :courses
 
+  root  :to => 'students#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,7 +1,9 @@
+
+
 class Student < ActiveRecord::Base
   belongs_to :section
   belongs_to :classification
-  attr_accessible :classification_id, :first, :image, :last, :netid, :section_id
+  attr_accessible :classification_id, :first, :image, :last, :netid, :section_id, :repo
 
   def full_name
   	"#{first} #{last}"
@@ -13,8 +15,13 @@ class Student < ActiveRecord::Base
     else
        "/assets/students/placeholder.jpg"
     end
-
   end
+
+
+  def repo_url
+    "https://itmlab-web.business.nd.edu/svn/#{section.course.code}-#{section.course.number}-#{section.semester.name}#{section.year}/students/#{netid}"
+  end
+
 
   def upload_image(image_file)
   	directory = 'app/assets/images/students'
@@ -35,4 +42,9 @@ class Student < ActiveRecord::Base
 
   end
   
+
+  def generate_password
+    SecureRandom.hex(3)
+  end
+
 end
