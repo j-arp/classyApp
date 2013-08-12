@@ -17,7 +17,7 @@ class Importer
 
   def array 
   	students = []
-  	csv_data = CSV.parse(@content, :headers => true)
+  	csv_data = CSV.parse(@content, :headers => false)
   	csv_data.each do | t | 
 
     c = Classification.find_or_create_by_name(t[3])

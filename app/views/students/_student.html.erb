@@ -1,0 +1,27 @@
+<div class="span3 well student-well">  
+	<h3><%= student.full_name %></h3>
+
+	<%= image_tag student.image_url, :width => 100 %>
+
+<p>
+  <b>Netid:</b>
+  <%= student.netid %>
+</p>
+
+
+<p>
+  <b>Classification:</b>
+  <%= "a #{student.classification.name} #{student.major.name} Student..." %> 
+</p>
+<% unless :truncate %>
+<p>
+  <b>Section:</b>
+  <%= student.section %>
+</p>
+
+ <%= link_to 'Show', student, :class => 'btn btn-small' %>
+        <%= link_to 'Edit', edit_student_path(student), :class => 'btn btn-small' %>
+        <%= link_to 'Delete', student, method: :delete, data: { confirm: 'Are you sure?' },:class => 'btn btn-small' %>
+<% end %>
+
+</div>

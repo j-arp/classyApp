@@ -3,11 +3,17 @@
 class Student < ActiveRecord::Base
   belongs_to :section
   belongs_to :classification
-  attr_accessible :classification_id, :first, :image, :last, :netid, :section_id, :repo
+  belongs_to :major
+  attr_accessible :classification_id, :first, :image, :last, :netid, :section_id, :major_id, :repo, :nickname
 
   def full_name
-  	"#{first} #{last}"
- 	end 
+    if nickname.empty? 
+    	"#{first} #{last}"
+    else
+      "#{nickname} #{last}"
+   	end 
+
+ end
 
   def image_url
     unless image.blank?

@@ -7,7 +7,8 @@ class BatchController < ApplicationController
 
   	import_file = params[:file]
 	   
-    if params.has_key? :clear
+    if true
+      #params.has_key? :clear
       #puts "clear out all for #{params[:section_id]}"
       Student.delete_all
       #(["section_id = ?", params[:section_id]])
@@ -28,7 +29,7 @@ class BatchController < ApplicationController
 
      populate(@students, params[:section_id])
 
-  	render :json => @students
+  	#render :json => @students
   end
 
 
@@ -38,9 +39,12 @@ class BatchController < ApplicationController
   		s = Student.new
   		s.first = student[:first]
   		s.last = student[:last]
+      s.nickname = ""
+      s.image = "#{student[:netid]}.jpeg"
   		s.netid = student[:netid]
-  		s.classification_id = student[:classification_id]
+  		s.classification_id = Classification.first.id
   		s.section_id = section_id
+      s.major_id = Major.first.id
   		s.save
   	end
 

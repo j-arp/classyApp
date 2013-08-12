@@ -1,0 +1,31 @@
+.skinny{width:100px;}
+
+select{width:220px;}	
+select.skinny{width:100px;}	
+
+@media (max-width: 480px) {
+	select{width:100%;}	
+	select.skinny{width:100%;}	
+	input{width:100%;}
+}
+
+#alpha a.btn-danger,#alpha a.btn-success,#alpha a.btn-inverse{color:#f2f2f2;}
+
+.table-bordered caption + thead tr:first-child th, .table-bordered caption + tbody tr:first-child th, .table-bordered caption + tbody tr:first-child td, .table-bordered colgroup + thead tr:first-child th, .table-bordered colgroup + tbody tr:first-child th, .table-bordered colgroup + tbody tr:first-child td, .table-bordered thead:first-child tr:first-child th, .table-bordered tbody:first-child tr:first-child th, .table-bordered tbody:first-child tr:first-child td {
+	border-top: 0;
+	background-color: #0d407b;
+	border-color: #0d407b;
+
+}
+/* f9f8f3 */
+textarea{width:96%}
+
+div.well{background-color: #f9f9f9; border: thin solid #eee; box-shadow: 3px 3px 10px #ccc}
+div.well-nested{background-color: #f3f3f3; box-shadow: none;}
+div.well-selected{border:thin solid #cccddd;}
+
+div.well h2{border-bottom: thin solid #cccddd; font-size:1.4em;}
+
+div.student-well{padding:7px;}
+
+div.form-actions{background-color: none; padding:0px; margin: 0px 0px 0px 125px;}

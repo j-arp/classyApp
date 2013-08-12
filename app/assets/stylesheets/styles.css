@@ -16,25 +16,32 @@ td{padding:6px;}
 
 tr.dark{background-color: #f2f2f2}
 div.field{float:left; width:100%;}
+
+#new-team-form{}
+div.embedded-form form{float:left;background-color: #f2f2f2; padding:6px; border-radius:6px;}
+div.embedded-form{float:left; width:98%; margin-left:2%;}
+
+form div.actions{margin-left:135px;}
+form div.form-section{margin-bottom:40px; float:left; width:100%;}
+
 label{display:inline; min-width:125px; text-align:right; float:left; margin-right:10px; padding-top:5px;}
 div.indent{margin-left:135px;}
 label.no-indent{min-width:0px; margin-left:10px;}
 input, select {float:left;}
-form div.form-section{margin-bottom:40px; float:left; width:100%;}
-
-ul.light-block{}
-ul.light-block li{margin:5px 0px 20px 30px; padding:10px; border-bottom:thin solid #f2f2f2; list-style-type: none}
-
-#new-team-form{}
-
-form div.actions{margin-left:135px;}
-div.nav-actions{text-align:right; width:100%;}
 
 input{border-radius:4px; padding:2px;}
 select{border-radius:4px; padding:2px;}
 
-div.embedded-form{float:left; width:98%; margin-left:2%;}
-div.embedded-form form{float:left;background-color: #f2f2f2; padding:6px; border-radius:6px;}
+ul.light-block{}
+ul.light-block li{margin:5px 0px 20px 30px; padding:10px; border-bottom:thin solid #f2f2f2; list-style-type: none}
+
+
+div.nav-actions{text-align:right; width:100%;}
+div.form-actions{float:left; text-align:right; margin-left:135px; margin-bottom: 10px}
+div#top-actions{float:left; text-align:right; width:100%; margin-bottom: 10px}
+div#bottom-actions{float:left; width: 100%; text-align: center}
+
+
  
 div.note-list{float:left; margin-left:10px;}
 div.note-list p{border-left:3px solid #f2f2f2; padding:6px;}

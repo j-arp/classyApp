@@ -12,32 +12,44 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :first %><br />
+    <%= f.label :first %>
     <%= f.text_field :first %>
   </div>
   <div class="field">
-    <%= f.label :last %><br />
+    <%= f.label :last %>
     <%= f.text_field :last %>
   </div>
+
   <div class="field">
-    <%= f.label :netid %><br />
+    <%= f.label :nickname %>
+    <%= f.text_field :nickname %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :netid %>
     <%= f.text_field :netid %>
   </div>
+  
   <div class="field">
-    <%= f.label :classification %><br />
+    <%= f.label :major %>
+    <%= f.collection_select :major_id, @majors, :id, :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :classification %>
     <%= f.collection_select :classification_id, @classifications, :id, :name %>
   </div>
   <div class="field">
-    <%= f.label :image_file %><br />
+    <%= f.label :image_file %>
     <%= f.file_field :image_file %>
   </div>
   <div class="field">
-    <%= f.label :section %><br />
+    <%= f.label :section %>
     <%= f.collection_select :section_id, Section.all, :id, :to_s %>
   </div>
 
 <div class="field">
-    <%= f.label :repo %><br />
+    <%= f.label :repo %>
     <%= f.text_field :repo %>
   </div>
 

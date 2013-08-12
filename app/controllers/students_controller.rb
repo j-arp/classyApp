@@ -2,7 +2,7 @@ class StudentsController < ApplicationController
   # GET /students
   # GET /students.json
 
-  before_filter :get_classifications
+  before_filter :get_classifications_and_majors
 
   def index
     @students = Student.all
@@ -12,7 +12,15 @@ class StudentsController < ApplicationController
       format.json { render json: @students }
     end
   end
+  
+  def list
+    @students = Student.all
 
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @students }
+    end
+  end
   # GET /students/1
   # GET /students/1.json
   def show
@@ -95,7 +103,8 @@ class StudentsController < ApplicationController
   end
 
 
-  def get_classifications
+  def get_classifications_and_majors
     @classifications = Classification.all
+    @majors = Major.all
   end
 end
