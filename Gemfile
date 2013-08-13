@@ -18,7 +18,7 @@ group :assets do
 end
 
 group :development, :test do
-	gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
+	#gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
 	gem 'guard-test'
 	gem 'growl'
 	gem 'ruby-prof'
