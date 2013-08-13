@@ -1,0 +1,19 @@
+
+<%= form_for @user, :url => "/authenticate"  do |f|%>
+
+<div class="field">
+	<%= f.label :username %>
+	<%= f.text_field :username %>
+</div>
+
+<div class="field">
+	<%= f.label :password %>
+	<%= f.password_field :password %>
+</div>
+
+<%= f.submit %>
+
+<% end %>
+
+
+
