@@ -7,29 +7,54 @@
 <table class="table table-bordered table-striped table-hover">
   <tr>
     <th></th>
-    <th>First</th>
-    <th>Last</th>
-    <th>Nickname</th>
-    <th>Netid</th>
-    <th>Classification</th>
-    <th>Major</th>
+    <th class="td-first over-680">First</th>
+    <th class="over-680">Last</th>
+
+    <th class="td-name under-680">Name</th>
+
+    <th class="td-nick over-1000">Nickname</th>
     
-    <th></th>
+    <th class="td-net over-680">Netid</th>
+    
+    <th class="td-class over-1100">Classification</th>
+    
+    <th class="td-major over-480">Major</th>
+    
+    
+    <th class="over-480"></th>
   </tr>
 
 <% @students.each do |student| %>
   <tr>
     <td><%= image_tag student.image_url, :width => 76 %></td>
 
-    <td><%= student.first %></td>
-    <td><%= student.last %></td>
-    <td><%= student.nickname %></td>
-    <td><%= student.netid %></td>
-    <td><%= student.classification.name %></td>
-    <td><%= student.major.name %></td>
+    <td class="over-680"><%= student.first %></td>
+    <td class="over-680"><%= student.last %></td>
+    
+    <td class="under-680">
+        <%= student.full_name %>
+           
+            <div class="under-480">
+                    <%= link_to 'Details', student, :class => 'btn btn-small' %>
+            <%= link_to 'Update', edit_student_path(student), :class => 'btn btn-small' %>
+            <%= link_to 'Delete', student, method: :delete, data: { confirm: 'Are you sure?' },:class => 'btn btn-small' %>
+            </div>
+
+    </td>
+
+    <td class="over-1000"><%= student.nickname %></td>
+    
+    <td class="over-680"><%= student.netid %></td>
+    
+    <td class="over-1100"><%= student.classification.name %></td>
+    
+
+    <td class="over-979"><%= student.major.name %></td>
+    
+    <td class="under-979 over-480"><%= student.major.code %></td>
     
     
-    <td>
+    <td class="over-480">
         <%= link_to 'Details', student, :class => 'btn btn-small' %>
         <%= link_to 'Update', edit_student_path(student), :class => 'btn btn-small' %>
         <%= link_to 'Delete', student, method: :delete, data: { confirm: 'Are you sure?' },:class => 'btn btn-small' %>

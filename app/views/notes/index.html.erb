@@ -1,25 +1,17 @@
-<h1>Listing notes</h1>
-
-<table>
-  <tr>
-    <th>Content</th>
-    <th>Student</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<h1>Notes on <%= @student.full_name %></h1>
 
 <% @notes.each do |note| %>
-  <tr>
-    <td><%= note.content %></td>
-    <td><%= note.student %></td>
-    <td><%= link_to 'Show', note %></td>
-    <td><%= link_to 'Edit', edit_note_path(note) %></td>
-    <td><%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+    <div class="well">
+    <%= note.content %>
+    
+    <div class="well-actions">
+      <%= link_to 'Show', student_notes_path(note), :class => "btn btn-small" %>
+      <%= link_to 'Edit', edit_student_note_path(@student, note), :class => "btn btn-small" %>
+      <%= link_to 'Destroy', student_notes_path(note), method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-small" %>
+    </div>
+
+  </div>
 <% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Note', new_note_path %>
+<div id="bottom-actions">
+  <%= link_to 'New Note', new_student_note_path, :class => "btn primary-btn" %>
+</div>

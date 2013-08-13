@@ -6,6 +6,7 @@ class Student < ActiveRecord::Base
   belongs_to :major
   has_many :members
   has_many :teams, :through => :members
+  has_many :notes
 
   attr_accessible :classification_id, :first, :image, :last, :netid, :section_id, :major_id, :repo, :nickname
 

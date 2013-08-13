@@ -28,11 +28,13 @@ th{background-color:#000066;text-align: left; color:#f2f2f2;}
 td{padding:6px;}
 
 tr.dark{background-color: #f2f2f2}
-div.field{float:left; width:100%;}
+
+form{margin-top:10px;}
 
 #new-team-form{}
 div.embedded-form form{float:left;background-color: #f2f2f2; padding:6px; border-radius:6px;}
 div.embedded-form{float:left; width:98%; margin-left:2%;}
+div.field{float:left; width:100%;}
 
 form div.actions{margin-left:135px;}
 form div.form-section{margin-bottom:40px; float:left; width:100%;}

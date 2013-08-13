@@ -1,9 +1,11 @@
 class NotesController < ApplicationController
   # GET /notes
   # GET /notes.json
-  def index
-    @notes = Note.all
 
+  before_filter :get_student
+
+  def index
+    @notes = @student.notes
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @notes }
@@ -24,6 +26,7 @@ class NotesController < ApplicationController
   # GET /notes/new
   # GET /notes/new.json
   def new
+    
     @note = Note.new
 
     respond_to do |format|
@@ -44,7 +47,7 @@ class NotesController < ApplicationController
 
     respond_to do |format|
       if @note.save
-        format.html { redirect_to @note, notice: 'Note was successfully created.' }
+        format.html { redirect_to student_notes_path(@student), notice: 'Note was successfully created.' }
         format.json { render json: @note, status: :created, location: @note }
       else
         format.html { render action: "new" }
@@ -60,7 +63,7 @@ class NotesController < ApplicationController
 
     respond_to do |format|
       if @note.update_attributes(params[:note])
-        format.html { redirect_to @note, notice: 'Note was successfully updated.' }
+        format.html { redirect_to student_notes_path(@student), notice: 'Note was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -76,8 +79,13 @@ class NotesController < ApplicationController
     @note.destroy
 
     respond_to do |format|
-      format.html { redirect_to notes_url }
+      format.html { redirect_to student_notes_path(@student)}
       format.json { head :no_content }
     end
   end
+
+  def get_student
+    @student = Student.find(params[:student_id])
+  end
+
 end

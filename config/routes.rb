@@ -1,16 +1,7 @@
 ClassyApp::Application.routes.draw do
   resources :majors
-
-
-  resources :notes
-
-
   resources :members
-
-
   resources :teams
-
-
   resources :classifications
 
   get "students/list"   => "students#list", :as => :student_list
@@ -21,7 +12,10 @@ ClassyApp::Application.routes.draw do
   post "/teams/addMember" => 'teams#addMember'
   get "/batch/clear"
 
-  resources :students
+  resources :students do
+    resources :notes
+  end
+  
   resources :semesters
   resources :sections
   resources :courses
