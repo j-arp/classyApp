@@ -14,6 +14,7 @@ class TeamsController < ApplicationController
   # GET /teams/1.json
   def show
     @team = Team.find(params[:id])
+
     @member = Member.new
     @students = Student.unassigned
     respond_to do |format|
@@ -25,7 +26,8 @@ class TeamsController < ApplicationController
   def addMember
     @member = Member.new(params[:member])
     @team = Team.find(params[:member][:team_id])
-
+    @member.team_id = @team.id
+    puts @team
     respond_to do |format|
       if @member.save
         format.html { redirect_to @team, notice: 'Member was successfully created.' }

@@ -43,6 +43,7 @@ GEM
       multi_json (~> 1.0)
     ffi (1.8.1)
     formatador (0.2.4)
+    friendly_id (4.0.10)
     growl (1.0.3)
     guard (1.8.0)
       formatador (>= 0.2.4)
@@ -136,6 +137,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  friendly_id (~> 4.0.10)
   growl
   guard-test
   jquery-rails

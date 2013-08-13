@@ -1,4 +1,4 @@
-<div class="span3 well student-well well-nested">  
+<div class="span3 well student-well <% unless defined?(minimize_links).nil? %>well-nested <% end %>">  
 	<h3><%= link_to student.full_name, student_path(student) %></h3>
 
 	<%= image_tag student.image_url, :width => 100 %>

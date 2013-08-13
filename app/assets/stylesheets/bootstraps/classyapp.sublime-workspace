@@ -319,82 +319,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/Users/jarp/webapps/rails/classyApp/app/views/students/index.html.erb",
-			"settings":
-			{
-				"buffer_size": 285,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/jarp/webapps/rails/classyApp/app/views/layouts/nd.html.erb",
-			"settings":
-			{
-				"buffer_size": 1940,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/jarp/webapps/rails/classyApp/app/assets/stylesheets/nd.css",
-			"settings":
-			{
-				"buffer_size": 10219,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/jarp/webapps/rails/classyApp/app/assets/stylesheets/styles.css",
-			"settings":
-			{
-				"buffer_size": 1999,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/jarp/webapps/rails/classyApp/app/views/teams/_team.html.erb",
-			"settings":
-			{
-				"buffer_size": 559,
-				"line_ending": "Unix",
-				"name": "_team.html.erb"
-			}
-		},
-		{
-			"file": "/Users/jarp/webapps/rails/classyApp/app/views/teams/index.html.erb",
-			"settings":
-			{
-				"buffer_size": 114,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": ".skinny{width:100px;}\n\nselect{width:220px;}	\nselect.skinny{width:100px;}	\n\n@media (max-width: 480px) {\n	select{width:100%;}	\n	select.skinny{width:100%;}	\n	input{width:100%;}\n}\n\n#alpha a.btn-danger,#alpha a.btn-success,#alpha a.btn-inverse{color:#f2f2f2;}\n\n.table-bordered caption + thead tr:first-child th, .table-bordered caption + tbody tr:first-child th, .table-bordered caption + tbody tr:first-child td, .table-bordered colgroup + thead tr:first-child th, .table-bordered colgroup + tbody tr:first-child th, .table-bordered colgroup + tbody tr:first-child td, .table-bordered thead:first-child tr:first-child th, .table-bordered tbody:first-child tr:first-child th, .table-bordered tbody:first-child tr:first-child td {\n	border-top: 0;\n	background-color: #0d407b;\n	border-color: #0d407b;\n\n}\n/* f9f8f3 */\ntextarea{width:96%}\n\n\n\ndiv.well{background-color: #f9f9f9; border: thin solid #eee; box-shadow: 3px 3px 10px #ccc}\ndiv.well-nested{background-color: #f3f3f3; box-shadow: none;}\ndiv.well-selected{border:thin solid #cccddd;}\n\n\ndiv.well h2{border-bottom: thin solid #cccddd; font-size:1.4em;}\n\ndiv.well-links{float:right;}\n\ndiv.student-well, div.team-well{padding:7px; float:left;}\ndiv.form-actions{background-color: none; padding:0px; margin: 0px 0px 0px 125px;}\n\na.btn {color: #000}\n.btn-danger{color:#fff;}",
-			"file": "bootstrap-override.css",
-			"file_size": 1314,
-			"file_write_time": 1376405257000000,
-			"settings":
-			{
-				"buffer_size": 1315,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/jarp/webapps/rails/classyApp/app/views/students/_student.html.erb",
-			"settings":
-			{
-				"buffer_size": 711,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/jarp/webapps/rails/classyApp/app/assets/stylesheets/scaffolds.css.scss",
-			"settings":
-			{
-				"buffer_size": 653,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -444,27 +368,41 @@
 	},
 	"file_history":
 	[
-		"/Users/jarp/webapps/rails/classyApp/app/views/teams/show.html.erb",
-		"/Users/jarp/webapps/rails/classyApp/app/views/students/_student.html.erb",
-		"/Users/jarp/webapps/rails/classyApp/config/routes.rb",
-		"/Users/jarp/webapps/rails/classyApp/app/views/students/show.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/assets/stylesheets/bootstraps/bootstrap-override.css",
+		"/Users/jarp/webapps/rails/classyApp/.git/COMMIT_EDITMSG",
+		"/Users/jarp/webapps/rails/classyApp/app/views/notes/index.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/views/notes/new.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/models/note.rb",
+		"/Users/jarp/webapps/rails/classyApp/app/views/notes/_form.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/views/notes/edit.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/controllers/notes_controller.rb",
 		"/Users/jarp/webapps/rails/classyApp/app/models/student.rb",
+		"/Users/jarp/webapps/rails/classyApp/app/views/students/list.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/assets/stylesheets/bootstraps/bootstrapresponsive.css",
+		"/Users/jarp/webapps/rails/classyApp/app/assets/stylesheets/stylesresponsive.css",
+		"/Users/jarp/webapps/rails/classyApp/app/assets/stylesheets/styles.css",
+		"/Users/jarp/webapps/rails/classyApp/config/routes.rb",
+		"/Users/jarp/webapps/rails/classyApp/app/views/students/_student.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/views/teams/_team.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/views/teams/_form.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/views/teams/edit.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/views/teams/new.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/controllers/teams_controller.rb",
+		"/Users/jarp/webapps/rails/classyApp/app/views/teams/show.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/views/teams/_add_member.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/assets/stylesheets/bootstraps/bootstrap.css",
+		"/Users/jarp/webapps/rails/classyApp/app/assets/stylesheets/scaffolds.css.scss",
+		"/Users/jarp/webapps/rails/classyApp/app/views/teams/index.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/views/layouts/nd.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/views/students/index.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/assets/stylesheets/nd.css",
+		"/Users/jarp/webapps/rails/classyApp/app/views/students/show.html.erb",
 		"/Users/jarp/webapps/rails/classyApp/app/views/students/_profile.html.erb",
 		"/Users/jarp/webapps/rails/classyApp/app/controllers/students_controller.rb",
-		"/Users/jarp/webapps/rails/classyApp/app/assets/stylesheets/nd.css",
-		"/Users/jarp/webapps/rails/classyApp/app/assets/stylesheets/styles.css",
-		"/Users/jarp/webapps/rails/classyApp/app/views/layouts/nd.html.erb",
 		"/Users/jarp/webapps/rails/classyApp/app/controllers/batch_controller.rb",
 		"/Users/jarp/webapps/rails/classyApp/config/environments/development.rb",
-		"/Users/jarp/webapps/rails/classyApp/.git/COMMIT_EDITMSG",
 		"/Users/jarp/webapps/rails/classyApp/app/controllers/members_controller.rb",
-		"/Users/jarp/webapps/rails/classyApp/app/controllers/teams_controller.rb",
-		"/Users/jarp/webapps/rails/classyApp/app/assets/stylesheets/bootstraps/bootstrap.css",
-		"/Users/jarp/webapps/rails/classyApp/app/assets/stylesheets/bootstraps/bootstrap-override.css",
-		"/Users/jarp/webapps/rails/classyApp/app/views/teams/_add_member.html.erb",
 		"/Users/jarp/webapps/rails/classyApp/app/models/team.rb",
-		"/Users/jarp/webapps/rails/classyApp/app/views/students/list.html.erb",
-		"/Users/jarp/webapps/rails/classyApp/app/views/students/index.html.erb",
 		"/Users/jarp/webapps/rails/becomingApp/app/views/manage/events/index.html.erb",
 		"/Users/jarp/webapps/rails/classyApp/app/views/students/_form.html.erb",
 		"/Users/jarp/_mounts/dev/mba/deepdive/includes/footer.cfm",
@@ -557,21 +495,7 @@
 		"/Users/jarp/_mounts/dev/mba/deepdive/foo.cfm",
 		"/Users/jarp/_mounts/dev/mba/deepdive/includes/currentItem.cfm",
 		"/Users/jarp/_mounts/dev/mba/deepdive/deep_dive_sidebar.jpg",
-		"/Users/jarp/_mounts/dev/mba/deepdive/application.cfm",
-		"/Users/jarp/_mounts/dev/mba/deepdive/includes/leftnav_partners.cfm",
-		"/Users/jarp/.gitconfig",
-		"/Users/jarp/_mounts/prod/webapp/mba/monday_and_mba/com/newsletter.cfc",
-		"/Users/jarp/_mounts/prod/webapp/mba/monday_and_mba/css/monday.css",
-		"/Users/jarp/_mounts/prod/webapp/mba/monday_and_mba/ndex.cfm",
-		"/Users/jarp/_mounts/prod/webapp/mba/monday_and_mba/monday.cfm",
-		"/Users/jarp/_mounts/prod/webapp/mba/monday_and_mba/index.cfm",
-		"/Users/jarp/_mounts/prod/webapp/mba/monday_and_mba/monday.html",
-		"/Users/jarp/_mounts/prod/webapp/mba/monday_and_mba/new.cfm",
-		"/Users/jarp/_mounts/prod/webapp/mba/monday_and_mba/test-send.cfm",
-		"/Users/jarp/webapps/exby8t/worldzApp/config/environments/production.rb",
-		"/Users/jarp/webapps/static/monday.html",
-		"/Users/jarp/webapps/static/css/monday.css",
-		"/Users/jarp/_mounts/dev/becomingirish/scheduledtask/parseNew.cfm"
+		"/Users/jarp/_mounts/dev/mba/deepdive/application.cfm"
 	],
 	"find":
 	{
@@ -593,6 +517,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"@media",
+			"1abc",
+			"a:",
+			".btn",
 			"header",
 			"url",
 			"form-action",
@@ -716,11 +644,7 @@
 			"L049",
 			"jarp",
 			"Jonathan",
-			"jarp",
-			"Jonathan",
-			"Arp",
-			">Arp",
-			"arp"
+			"jarp"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -763,254 +687,8 @@
 	"groups":
 	[
 		{
-			"selected": 6,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/Users/jarp/webapps/rails/classyApp/app/views/students/index.html.erb",
-					"settings":
-					{
-						"buffer_size": 285,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								94,
-								94
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/Users/jarp/webapps/rails/classyApp/app/views/layouts/nd.html.erb",
-					"settings":
-					{
-						"buffer_size": 1940,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								691,
-								687
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 259.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/Users/jarp/webapps/rails/classyApp/app/assets/stylesheets/nd.css",
-					"settings":
-					{
-						"buffer_size": 10219,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4838,
-								5031
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 1008.0,
-						"translation.y": 2214.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/Users/jarp/webapps/rails/classyApp/app/assets/stylesheets/styles.css",
-					"settings":
-					{
-						"buffer_size": 1999,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								136,
-								136
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/Users/jarp/webapps/rails/classyApp/app/views/teams/_team.html.erb",
-					"settings":
-					{
-						"buffer_size": 559,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								541,
-								541
-							]
-						],
-						"settings":
-						{
-							"auto_name": "_team.html.erb",
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/Users/jarp/webapps/rails/classyApp/app/views/teams/index.html.erb",
-					"settings":
-					{
-						"buffer_size": 114,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								114,
-								114
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "bootstrap-override.css",
-					"settings":
-					{
-						"buffer_size": 1315,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1276,
-								1276
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 2.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "/Users/jarp/webapps/rails/classyApp/app/views/students/_student.html.erb",
-					"settings":
-					{
-						"buffer_size": 711,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								47,
-								47
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "/Users/jarp/webapps/rails/classyApp/app/assets/stylesheets/scaffolds.css.scss",
-					"settings":
-					{
-						"buffer_size": 653,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								72,
-								72
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],

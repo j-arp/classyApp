@@ -1,6 +1,6 @@
-
-
 class Student < ActiveRecord::Base
+  extend FriendlyId
+  friendly_id :netid
   belongs_to :section
   belongs_to :classification
   belongs_to :major

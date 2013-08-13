@@ -9,11 +9,11 @@
   <%= @team.repo %>
 </p>
 
-<div class="well span12" style="float:left">
+<div class="well span-full">
 	<%= render :partial => "students/student", :collection => @team.students, :locals => {:minimize_links => true } %>
 </div>
 
-<div class="well span12" style="float:left">
+<div class="well span-full" style="float:left">
 	<%= render "add_member" %>
 </div>
 
