@@ -17,7 +17,7 @@
   
   <div class="field">
     <%= f.label :student %>
-    <%= f.collection_select :student_id, Student.all, :id, :full_name %>
+    <%= f.collection_select :student_id, @students, :id, :full_name %>
   </div>
 
   <div class="form-actions">

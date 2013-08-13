@@ -1,5 +1,5 @@
-<div class="span3 well student-well">  
-	<h3><%= student.full_name %></h3>
+<div class="span3 well student-well well-nested">  
+	<h3><%= link_to student.full_name, student_path(student) %></h3>
 
 	<%= image_tag student.image_url, :width => 100 %>
 
@@ -13,15 +13,20 @@
   <b>Classification:</b>
   <%= "a #{student.classification.name} #{student.major.name} Student..." %> 
 </p>
-<% unless :truncate %>
+<% if defined?(minimize_links).nil? %>
 <p>
   <b>Section:</b>
   <%= student.section %>
 </p>
 
- <%= link_to 'Show', student, :class => 'btn btn-small' %>
-        <%= link_to 'Edit', edit_student_path(student), :class => 'btn btn-small' %>
-        <%= link_to 'Delete', student, method: :delete, data: { confirm: 'Are you sure?' },:class => 'btn btn-small' %>
+<p>
+   <%= link_to 'Details', student, :class => 'btn btn-small' %>
+   <%= link_to 'Update', edit_student_path(student), :class => 'btn btn-small' %>
+   <%= link_to 'Delete', student, method: :delete, data: { confirm: 'Are you sure?' },:class => 'btn btn-small' %>
+</p>
+
 <% end %>
+
+
 
 </div>

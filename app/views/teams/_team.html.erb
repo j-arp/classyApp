@@ -1,0 +1,26 @@
+<div class="span4 well team-well">
+
+<p id="notice"><%= notice %></p>
+
+<h2>
+    <%= team.name %>
+</h2>
+
+<p>
+  <b>Repo:</b>
+  <%= team.repo %>
+</p>
+
+<p>Team Members:</p>
+<ul>
+<% team.students.each do | student | %>
+	<li><%= student.full_name %></li>
+<% end %>
+</ul>
+
+<div class="well-links">
+<%= link_to 'Details', team_path(team), :class => "btn btn-small"  %>
+<%= link_to 'Update', edit_team_path(team), :class => "btn btn-small" %> 
+<%= link_to 'Delete', team, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-small btn-danger" %>
+</div>
+</div>

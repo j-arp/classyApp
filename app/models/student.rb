@@ -4,7 +4,22 @@ class Student < ActiveRecord::Base
   belongs_to :section
   belongs_to :classification
   belongs_to :major
+  has_many :members
+  has_many :teams, :through => :members
+
   attr_accessible :classification_id, :first, :image, :last, :netid, :section_id, :major_id, :repo, :nickname
+
+  scope :assigned, :joins => (:members) 
+  
+#scope :with_cd_player, joins(:cars).where('cars.radio_id is not null')
+  
+  def self.unassigned 
+    assigned_ids = Student.assigned.pluck(:id)
+    unassigned = Student.find(:all, :conditions => ['id not in (?)', assigned_ids])
+    #Topic.find(:all, :conditions => ['forum_id not in (?)', @forums.map(&:id)])
+
+
+  end
 
   def full_name
     if nickname.empty? 

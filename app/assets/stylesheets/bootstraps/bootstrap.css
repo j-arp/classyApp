@@ -235,13 +235,13 @@ body {
 }
 
 a {
-  color: #1abc9c;
+  color: #08386f;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #1dd2af;
+  color: #cc0000;
   text-decoration: underline;
 }
 

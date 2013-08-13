@@ -3,6 +3,12 @@ class BatchController < ApplicationController
   	@sections = Section.all
   end
 
+  def svn
+    puts "Reading config"
+    puts Rails.application.config.local_svn_path
+    render :json => params
+  end
+
   def import
 
   	import_file = params[:file]
@@ -35,6 +41,7 @@ class BatchController < ApplicationController
 
   def populate(students, section_id)
   	students.each do | student |
+      
 
   		s = Student.new
   		s.first = student[:first]

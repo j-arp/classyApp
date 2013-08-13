@@ -20,12 +20,19 @@ select.skinny{width:100px;}
 /* f9f8f3 */
 textarea{width:96%}
 
+
+
 div.well{background-color: #f9f9f9; border: thin solid #eee; box-shadow: 3px 3px 10px #ccc}
 div.well-nested{background-color: #f3f3f3; box-shadow: none;}
 div.well-selected{border:thin solid #cccddd;}
 
+
 div.well h2{border-bottom: thin solid #cccddd; font-size:1.4em;}
 
-div.student-well{padding:7px;}
+div.well-links{float:right;}
 
+div.student-well, div.team-well{padding:7px; float:left;}
 div.form-actions{background-color: none; padding:0px; margin: 0px 0px 0px 125px;}
+
+a.btn {color: #000}
+.btn-danger{color:#fff;}

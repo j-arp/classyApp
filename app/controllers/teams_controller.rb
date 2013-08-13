@@ -15,6 +15,7 @@ class TeamsController < ApplicationController
   def show
     @team = Team.find(params[:id])
     @member = Member.new
+    @students = Student.unassigned
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @team }
@@ -23,13 +24,14 @@ class TeamsController < ApplicationController
 
   def addMember
     @member = Member.new(params[:member])
+    @team = Team.find(params[:member][:team_id])
 
     respond_to do |format|
       if @member.save
-        format.html { redirect_to @member, notice: 'Member was successfully created.' }
-        format.json { render json: @member, status: :created, location: @member }
+        format.html { redirect_to @team, notice: 'Member was successfully created.' }
+        format.json { render json: @team.students, status: :created, location: @member }
       else
-        format.html { render action: "new" }
+        format.html { render action: "show" }
         format.json { render json: @member.errors, status: :unprocessable_entity }
       end
     end

@@ -15,6 +15,7 @@ ClassyApp::Application.routes.draw do
 
   get "students/list"   => "students#list", :as => :student_list
   get "/batch/index", :as => :new_batch
+  get "/batch/svn", :as => :svn
   get "/batch" => 'batch#index'
   post "/batch/import", :as => :process_batch
   post "/teams/addMember" => 'teams#addMember'
@@ -24,7 +25,7 @@ ClassyApp::Application.routes.draw do
   resources :semesters
   resources :sections
   resources :courses
-
+  match '/students/:id/svn' => 'students#svn', :as => :student_svn
   root  :to => 'students#index'
 
   # The priority is based upon order of creation:

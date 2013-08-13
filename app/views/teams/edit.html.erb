@@ -2,5 +2,7 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @team %> |
-<%= link_to 'Back', teams_path %>
+<div id="bottom-actions">
+<%= link_to 'Details', team_path(@team), :class => "btn"  %> 
+<%= link_to 'All Teams', teams_path , :class => "btn" %>
+</div>

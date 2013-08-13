@@ -31,7 +31,19 @@ class StudentsController < ApplicationController
       format.json { render json: @student }
     end
   end
-
+  def svn
+  
+    @student = Student.find(params[:id])
+    exec "open /Users/jarp/MGTI-FA13/students/#{@student.netid}"
+    if Dir.exists? "/Users/jarp/MGTI-FA13/students/#{@student.netid}"
+      files = Dir.open("/Users/jarp/MGTI-FA13/students/#{@student.netid}")
+    else
+      Dir.mkdir "/Users/jarp/MGTI-FA13/students/#{@student.netid}"
+      files = Dir.open("/Users/jarp/MGTI-FA13/students/#{@student.netid}")
+    end
+    render json: files
+    #exec "open /Users/jarp/MGTI-FA13/students/#{@student.netid}"
+  end
   # GET /students/new
   # GET /students/new.json
   def new
