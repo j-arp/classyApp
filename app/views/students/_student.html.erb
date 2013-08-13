@@ -2,28 +2,36 @@
 	<h3><%= link_to student.full_name, student_path(student) %></h3>
 
 	<%= image_tag student.image_url, :width => 100 %>
+  <div class="student-details">
+    <p>
+      <b>Netid:</b>
+      <%= student.netid %>
+    </p>
 
-<p>
-  <b>Netid:</b>
-  <%= student.netid %>
-</p>
 
+    <p>
+      <b>Classification:</b>
+      <%= "a #{student.classification.name} #{student.major.name} Student..." %> 
+    </p>
 
-<p>
-  <b>Classification:</b>
-  <%= "a #{student.classification.name} #{student.major.name} Student..." %> 
-</p>
-<% if defined?(minimize_links).nil? %>
-<p>
-  <b>Section:</b>
-  <%= student.section %>
-</p>
+    <% if defined?(minimize_links).nil? %>
 
-<p>
+    <p>
+      <b>Section:</b>
+      <%= student.section %>
+    </p>
+    <% unless student.notes.empty? %>
+      <p><%= link_to "Read #{student.notes.count} Notes", student_notes_path(student) %> </p>
+      <% else %>
+      <p>No notes for <%= student.full_name %> yet.</p>
+    <% end %>
+  </div>
+
+<div class="well-actions">
    <%= link_to 'Details', student, :class => 'btn btn-small' %>
    <%= link_to 'Update', edit_student_path(student), :class => 'btn btn-small' %>
    <%= link_to 'Delete', student, method: :delete, data: { confirm: 'Are you sure?' },:class => 'btn btn-small' %>
-</p>
+</div>
 
 <% end %>
 

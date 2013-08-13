@@ -1,4 +1,11 @@
 ClassyApp::Application.routes.draw do
+  resources :users
+
+
+  match  "/authenticate" => 'session#authenticate'
+  get "/login" => 'session#prompt'
+  get "/logout" => 'session#logout'
+
   resources :majors
   resources :members
   resources :teams

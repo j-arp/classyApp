@@ -5,13 +5,15 @@
     <%= note.content %>
     
     <div class="well-actions">
-      <%= link_to 'Show', student_notes_path(note), :class => "btn btn-small" %>
+      
       <%= link_to 'Edit', edit_student_note_path(@student, note), :class => "btn btn-small" %>
-      <%= link_to 'Destroy', student_notes_path(note), method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-small" %>
+      <%= link_to 'Delete', student_notes_path(note), method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-small btn-danger" %>
     </div>
 
   </div>
 <% end %>
 <div id="bottom-actions">
   <%= link_to 'New Note', new_student_note_path, :class => "btn primary-btn" %>
+  <%= link_to "#{@student.full_name}", @student, :class => "btn primary-btn" %>
+  <%= link_to "All Students", students_path, :class => "btn primary-btn" %>
 </div>

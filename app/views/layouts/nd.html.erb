@@ -21,6 +21,10 @@
       <h2>
       <%= link_to "Students", students_path %> | 
       <%= link_to "Teams", teams_path %>
+
+      <% if session[:user] %>
+      | <%= link_to "Logout", "/logout" %>
+      <% end %>      
       </h2>
 
 
@@ -31,9 +35,13 @@
     </div>
     <div id="content" role="main" class="cf">
 
-<% unless flash[:message].nil? %>
-	<p> <%= flash[:message] %></p>
-<% end %>
+  <% unless flash[:message].nil? %>
+  	<div class="alert alert-success"> <%= flash[:message] %></div>
+  <% end %>
+
+  <% unless flash[:error].nil? %>
+    <div class="alert alert-error"> <%= flash[:error] %></div>
+  <% end %>
 
 
         <%= yield %>

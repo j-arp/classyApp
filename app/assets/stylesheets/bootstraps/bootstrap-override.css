@@ -31,7 +31,11 @@ div.well-selected{border:thin solid #cccddd;}
 
 div.well h2{border-bottom: thin solid #cccddd; font-size:1.4em;}
 
-div.well-links, div.well-actions{float:right; margin-top:10px; border-top:thin solid #ececec; width:100%; text-align:right; padding:2px;}
+div.well-links, div.well-actions{
+		float:right; margin-top:10px; 
+		border-top:thin solid #ececec; width:96%; padding:10px 0; 
+		text-align:center; 
+		}
 div.student-well, div.team-well{padding:7px; float:left;}
 div.form-actions{background-color: none; padding:0px; margin: 0px 0px 0px 125px;}
 
