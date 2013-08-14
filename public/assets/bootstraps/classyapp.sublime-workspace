@@ -1,0 +1,757 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"tab",
+				"table-cell"
+			],
+			[
+				"out",
+				"output=\"true\"	output"
+			],
+			[
+				"righ",
+				"right-side"
+			],
+			[
+				"createTime",
+				"createTimeSpan	fn. (cfscript)"
+			],
+			[
+				"c",
+				"cachedwithin	@cachedwithin"
+			],
+			[
+				"ty",
+				"type=\"any\"	type"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"border",
+				"border-spacing"
+			],
+			[
+				"bor",
+				"border-top"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"list",
+				"list-style-image"
+			],
+			[
+				"structke",
+				"structKeyExists	fn. (cfscript)"
+			],
+			[
+				"create",
+				"createObject	fn. (cfscript)"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"first",
+				"first_login"
+			],
+			[
+				"program",
+				"program2"
+			],
+			[
+				"cit",
+				"citizenship_type"
+			],
+			[
+				"be_",
+				"be_nil"
+			],
+			[
+				"greeting",
+				"greeting_type"
+			],
+			[
+				"address",
+				"address_types"
+			],
+			[
+				"assigned",
+				"assigned_entry"
+			],
+			[
+				"orp",
+				"orphan_entry"
+			],
+			[
+				"des",
+				"destroy"
+			],
+			[
+				"inv",
+				"invoice_after"
+			],
+			[
+				"entry",
+				"entry-checkbox"
+			],
+			[
+				"va",
+				"valid_session"
+			],
+			[
+				"valid",
+				"valid_post"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"navbar",
+				"navbar-inner"
+			],
+			[
+				"re",
+				"refreshEntries"
+			],
+			[
+				"get_",
+				"get_pages"
+			],
+			[
+				"P",
+				"p	Tag"
+			],
+			[
+				"new",
+				"new_program"
+			],
+			[
+				"redirect",
+				"redirect_to"
+			],
+			[
+				"vaid",
+				"valid_admin_session"
+			],
+			[
+				"admin",
+				"admin_login_path"
+			],
+			[
+				"resoure",
+				"resource_type"
+			],
+			[
+				"group",
+				"grouped_resources"
+			],
+			[
+				"be",
+				"be_nil"
+			],
+			[
+				"should",
+				"should_not"
+			],
+			[
+				"director_gre",
+				"director_greeting_type"
+			],
+			[
+				"ass",
+				"assigns"
+			],
+			[
+				"assert_",
+				"assert_not_nil"
+			],
+			[
+				"assert",
+				"assert_not_nil"
+			],
+			[
+				"sl",
+				"slug"
+			],
+			[
+				"arti",
+				"article_collection"
+			],
+			[
+				"ord",
+				"order_items"
+			],
+			[
+				"team",
+				"teams"
+			],
+			[
+				"ab",
+				"abort=\"true\"	abort"
+			],
+			[
+				"resumei",
+				"resumeimg"
+			],
+			[
+				"graduate",
+				"GRADUATESCHOOL"
+			],
+			[
+				"student",
+				"student_interests"
+			],
+			[
+				"int",
+				"interest_group_id"
+			],
+			[
+				"Inter",
+				"interestGroup"
+			],
+			[
+				"ph",
+				"phone1"
+			],
+			[
+				"so",
+				"sold_count"
+			],
+			[
+				"tea",
+				"team-content"
+			],
+			[
+				"v",
+				"vertical-align"
+			],
+			[
+				"day",
+				"days"
+			],
+			[
+				"days",
+				"days_back"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"a",
+				"abort=\"true\"	abort"
+			],
+			[
+				"has",
+				"has_key"
+			],
+			[
+				"recent",
+				"recent_listens"
+			],
+			[
+				"ran",
+				"rangeArray"
+			],
+			[
+				"in",
+				"ingredients"
+			],
+			[
+				"type",
+				"type=\"html\"	type"
+			],
+			[
+				"resp",
+				"responseText"
+			],
+			[
+				"background-",
+				"background-color"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"f",
+				"form-row-indented"
+			],
+			[
+				"submit",
+				"submit-button"
+			],
+			[
+				"mari",
+				"margin-top"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"backg",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 27.0,
+		"selected_items":
+		[
+			[
+				"brows",
+				"Preferences: Browse Packages"
+			],
+			[
+				"add",
+				"Project: Add Folder"
+			],
+			[
+				"save",
+				"Project: Save As"
+			],
+			[
+				"add ",
+				"Project: Add Folder"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 458.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jarp/webapps/rails/classyApp/app/assets/stylesheets/bootstraps/bootstrap-override.css",
+		"/Users/jarp/webapps/rails/classyApp/.git/COMMIT_EDITMSG",
+		"/Users/jarp/webapps/rails/classyApp/app/views/notes/index.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/views/notes/new.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/models/note.rb",
+		"/Users/jarp/webapps/rails/classyApp/app/views/notes/_form.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/views/notes/edit.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/controllers/notes_controller.rb",
+		"/Users/jarp/webapps/rails/classyApp/app/models/student.rb",
+		"/Users/jarp/webapps/rails/classyApp/app/views/students/list.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/assets/stylesheets/bootstraps/bootstrapresponsive.css",
+		"/Users/jarp/webapps/rails/classyApp/app/assets/stylesheets/stylesresponsive.css",
+		"/Users/jarp/webapps/rails/classyApp/app/assets/stylesheets/styles.css",
+		"/Users/jarp/webapps/rails/classyApp/config/routes.rb",
+		"/Users/jarp/webapps/rails/classyApp/app/views/students/_student.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/views/teams/_team.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/views/teams/_form.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/views/teams/edit.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/views/teams/new.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/controllers/teams_controller.rb",
+		"/Users/jarp/webapps/rails/classyApp/app/views/teams/show.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/views/teams/_add_member.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/assets/stylesheets/bootstraps/bootstrap.css",
+		"/Users/jarp/webapps/rails/classyApp/app/assets/stylesheets/scaffolds.css.scss",
+		"/Users/jarp/webapps/rails/classyApp/app/views/teams/index.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/views/layouts/nd.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/views/students/index.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/assets/stylesheets/nd.css",
+		"/Users/jarp/webapps/rails/classyApp/app/views/students/show.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/views/students/_profile.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/controllers/students_controller.rb",
+		"/Users/jarp/webapps/rails/classyApp/app/controllers/batch_controller.rb",
+		"/Users/jarp/webapps/rails/classyApp/config/environments/development.rb",
+		"/Users/jarp/webapps/rails/classyApp/app/controllers/members_controller.rb",
+		"/Users/jarp/webapps/rails/classyApp/app/models/team.rb",
+		"/Users/jarp/webapps/rails/becomingApp/app/views/manage/events/index.html.erb",
+		"/Users/jarp/webapps/rails/classyApp/app/views/students/_form.html.erb",
+		"/Users/jarp/_mounts/dev/mba/deepdive/includes/footer.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/Application.cfc",
+		"/private/var/folders/zm/x9d5vjxd4lxgkftlwm14s7p1yln5mq/T/e0b8860f-bbba-4dc5-95a0-11cb9839df6e/www/index.cfm",
+		"/private/var/folders/zm/x9d5vjxd4lxgkftlwm14s7p1yln5mq/T/e0b8860f-bbba-4dc5-95a0-11cb9839df6e/www/.htaccess",
+		"/private/var/folders/zm/x9d5vjxd4lxgkftlwm14s7p1yln5mq/T/e0b8860f-bbba-4dc5-95a0-11cb9839df6e/www/Application.cfc",
+		"/private/var/folders/zm/x9d5vjxd4lxgkftlwm14s7p1yln5mq/T/e0b8860f-bbba-4dc5-95a0-11cb9839df6e/www/default/index.cfm",
+		"/Users/jarp/Desktop/ddep doive rules long",
+		"/Users/jarp/_mounts/dev/mba/deepdive/.git/COMMIT_EDITMSG",
+		"/Users/jarp/_mounts/dev/mba/deepdive/prizes/index.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/boom.cfm",
+		"/Users/jarp/_mounts/dev/becomingirish/career-development/index.cfm",
+		"/Users/jarp/Desktop/career-dev-login.txt",
+		"/Users/jarp/_mounts/dev/webapp/interact/model/info/msb.cfc",
+		"/Users/jarp/_mounts/dev/mba/deepdive/includes/home/prizes.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/lib/prizes.cfc",
+		"/Users/jarp/_mounts/prod/webapp/recruit_mba/jumpstart/forms/register_I.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/application.cfm.bak",
+		"/Users/jarp/_mounts/dev/mba/deepdive/chat/index.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/chat/speakeasy.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/entry/act_entry.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/entry/error/index.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/entry/index.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/entry/uploaded/index.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/forum/confirm.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/forum/login.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/forum/pagetemplates/main_footer.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/forum/pagetemplates/main_header.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/forum/tags/breadcrumbs.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/home/index.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/home/indexv.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/images/slider/default.html",
+		"/Users/jarp/_mounts/dev/mba/deepdive/includes/forum_nav.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/includes/gold_box.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/includes/head_includes.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/includes/header.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/includes/header_forum.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/includes/page_scripts.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/includes/results_box.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/includes/sidebar_common.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/includes/sidebar_common_temp.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/includes/sidebars/recent_partners.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/lib/steps.cfc",
+		"/Users/jarp/_mounts/dev/mba/deepdive/login/index.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/logon/index.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/partners/index.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/password/act_forgotpass.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/password/error/index.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/password/index.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/password/resendaccess/index.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/password/thank_you/index.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/prizeinfo/act_index.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/prizeinfo/error/index.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/prizeinfo/index.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/prizeinfo/thank_you/index.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/register/act_register.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/register/error/index.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/register/index.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/results/index.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/rules/index - Copy.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/rules/index.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/rules/plain/index.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/includes/home/slider.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/includes/home/video.cfm",
+		"/Users/jarp/Desktop/deep dive replacement",
+		"/Users/jarp/_mounts/dev/mba/deepdive/includes/sidebars/register.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/includes/sidebars/rules.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/includes/home/news.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/includes/home/really_get_started.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/includes/sidebars/partners.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/includes/sidebars/default.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/includes/sidebars/forum.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/includes/slider.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/.gitignore",
+		"/Users/jarp/_mounts/dev/mba/deepdive/includes/closed.cfm",
+		"/Users/jarp/webapps/webapp/interact/Application.cfc",
+		"/Users/jarp/_mounts/dev/mba/deepdive/includes/right_column.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/includes/sidebars/learn.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/includes/home/about.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/css/style.css",
+		"/Users/jarp/_mounts/dev/mba/deepdive/css/custom.css",
+		"/Users/jarp/_mounts/dev/mba/deepdive/includes/home/get_started.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/index.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/images/logos/cocacola.png",
+		"/Users/jarp/_mounts/dev/mba/deepdive/briefing/index.cfm",
+		"/Users/jarp/_mounts/prod/webapp/mba/get_in_touch/request_information/requestformMBAxml.cfm",
+		"/Users/jarp/_mounts/dev/webapp/mba/get_in_touch/request_information/requestformMBAxml.cfm",
+		"/Users/jarp/_mounts/dev/webapp/mba/get_in_touch/request_information/forms/request_information_I.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/foo.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/includes/currentItem.cfm",
+		"/Users/jarp/_mounts/dev/mba/deepdive/deep_dive_sidebar.jpg",
+		"/Users/jarp/_mounts/dev/mba/deepdive/application.cfm"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/jarp/_mounts/dev/mba/deepdive",
+			"<open files>,/Users/jarp/webapps/rails/BecomingIrishApp/app/controllers/system",
+			"<open files>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"@media",
+			"1abc",
+			"a:",
+			".btn",
+			"header",
+			"url",
+			"form-action",
+			"form-act",
+			"form-",
+			"<br />",
+			"\"/deepdive/",
+			"href=\"/deepdive/",
+			"Interterm_Intensive",
+			"MCOB",
+			"MBA Admiss",
+			"  \n",
+			"#",
+			" style=\"padding-bottom:5px; line-height:1.7;\"",
+			"system_columnlist",
+			"myArray",
+			"variables.",
+			"application_typ",
+			"allIDs",
+			"menu",
+			"Andrew sama",
+			"sama",
+			"event",
+			"img",
+			"fall",
+			"toggle",
+			"well",
+			"thiseventdate",
+			"welcome",
+			".resource",
+			"30",
+			"must be",
+			"visible",
+			"is_vis",
+			"ndmark300",
+			"ndmark",
+			"collapse",
+			"manage_",
+			"address_type = address_type.create! valid_attributes",
+			"event",
+			"Manage::",
+			"'",
+			"css",
+			"destroy_all",
+			"x32",
+			"instantclient11_2",
+			"10_1",
+			"scott",
+			"instantclient10_1",
+			"puts",
+			"width",
+			"media",
+			"js",
+			"jquery",
+			".js",
+			"220",
+			"gly",
+			".png",
+			"forms",
+			"tables",
+			"forms",
+			"tables",
+			"forms",
+			"divider",
+			"devider",
+			"ndmark",
+			"image",
+			"images",
+			"src=\"./bi-x_files",
+			"<!DOCTYPE html>\n<!-- saved from url=(0059)https://bidev.business.nd.edu/login/?returnurl=/&logout=yes -->\n<html class=\"\" lang=\"en\"><!--<![endif]--><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n\n<meta charset=\"utf-8\">\n<meta name=\"author\" content=\"ENR // OPAC // University of Notre Dame\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0\">\n\n<title>University of Notre Dame // Becoming Irish Login</title>\n<link rel=\"shortcut icon\" href=\"https://bidev.business.nd.edu/favicon.ico\">\n<link rel=\"apple-touch-icon\" href=\"https://bidev.business.nd.edu/stylesheets/images/nd-iphone.png\">\n<!--[if lt IE 9]><script src=\"//html5shim.googlecode.com/svn/trunk/html5.js\"></script><![endif]-->\n<link href=\"./bi-x_files/ndt.css\" rel=\"stylesheet\" type=\"text/css\">\n\n<script type=\"text/javascript\" async=\"\" src=\"./bi-x_files/ga.js\"></script><script type=\"text/javascript\" async=\"\" id=\"ndnetworkbarscript\" data-width=\"960px\" src=\"./bi-x_files/saved_resource\"></script><script src=\"./bi-x_files/jquery.min.js\" type=\"text/javascript\"></script> \n<script src=\"./bi-x_files/ndt.js\" type=\"text/javascript\"></script>\n\n<script type=\"text/javascript\">var ndn = document.createElement(\"script\"); ndn.type = \"text/javascript\";\nndn.async = true; ndn.id = \"ndnetworkbarscript\";\nndn.setAttribute(\"data-width\",\"960px\");\nndn.src = \"//nd.edu/brandbar/\";\nvar s = document.getElementsByTagName(\"script\")[0]; s.parentNode.insertBefore(ndn, s);</script>\n\n\n\n<script src=\"./bi-x_files/cufon-yui.js\" type=\"text/javascript\"></script><style type=\"text/css\">cufon{text-indent:0!important;}@media screen,projection{cufon{display:inline!important;display:inline-block!important;position:relative!important;vertical-align:middle!important;font-size:1px!important;line-height:1px!important;}cufon cufontext{display:-moz-inline-box!important;display:inline-block!important;width:0!important;height:0!important;overflow:hidden!important;text-indent:-10000in!important;}cufon canvas{position:relative!important;}}@media print{cufon{padding:0!important;}cufon canvas{display:none!important;}}</style>\n<script src=\"./bi-x_files/ChunkFive_400.font.js\" type=\"text/javascript\"></script>\n</head>\n<body id=\"login-page\">\n<div id=\"wrapper\" class=\"clearfix\">\n  <header id=\"header\" role=\"banner\" class=\"gtype blue\"> </header>\n  <div id=\"content\">\n    <div id=\"becoming-irish-logo-div\"><img src=\"./bi-x_files/becoming-irish-logo(blue-drop).png\" alt=\"Becoming Irish\"></div>\n    <div id=\"becoming-irish-text\">\n      <h3>Welcome to Becoming Irish!</h3>\n      <p>Congratulations on your acceptance to the University of Notre Dame  MBA Program! It is with great pleasure that we welcome you into the  Notre Dame family. As you begin the process of \"Becoming Irish,\"  we hope that this student guide will be a useful source of information  and will provide insight into the Notre Dame MBA Program as well as  South Bend and the surrounding communities.</p>\n    </div>\n    <div id=\"divider\"></div>\n    <div id=\"becoming-irish-login\">\n      <div id=\"form_wrapper\" class=\"form_wrapper\"> \n        \n        \n        \n        <form class=\"getStarted \" style=\"display:none\">\n          <h3>Your password has been sent</h3>\n          <div class=\"bottom\"> <a href=\"https://bidev.business.nd.edu/login/?returnurl=/&logout=yes#\" rel=\"login\" class=\"linkform\">Log in here</a> </div>\n        </form>\n        <form action=\"https://bidev.business.nd.edu/logon/\" class=\"login active\" method=\"post\" name=\"formlogin\" id=\"formlogin\" novalidate=\"novalidate\">\n        \n        <h3>Login to Becoming Irish</h3><p>Enter your username and password below. If this is your first time on the site, please <a href=\"https://bidev.business.nd.edu/forgot-password/\" rel=\"get_started\" class=\"forgot linkform\">click here</a> to get started.</p> \n          <input type=\"hidden\" name=\"returnurl\" value=\"/\">\n          <input type=\"hidden\" name=\"code\" value=\"\">\n          <input type=\"hidden\" name=\"userID\" value=\"0\">\n          \n            <input type=\"hidden\" name=\"currentuser\" value=\"1\" id=\"currentuser\">\n            <div class=\"field-wrapper\">\n              <div class=\"field-text\">Email:</div>\n              <input name=\"email\" type=\"text\" class=\"login-field\" id=\"email\">\n            </div>\n            \n          <div class=\"field-wrapper\">\n            <div class=\"field-text\">Password:</div>\n            <input name=\"password\" type=\"password\" class=\"login-field\" id=\"password\">\n          </div>\n          \n          <div class=\"bottom\">\n            <label><a href=\"https://bidev.business.nd.edu/forgot-password/\" rel=\"forgot_password\" class=\"forgot linkform\">Forgot your password?</a></label>\n            <button type=\"submit\" class=\"login-button\"><img src=\"./bi-x_files/log-in-button.png\" alt=\"Log-in\" width=\"84\" height=\"30\" class=\"log-in-button\"></button>\n            <div style=\"clear:both\"></div>\n            <div class=\"clear\"></div>\n          </div>\n           \n        </form>\n        <form action=\"https://bidev.business.nd.edu/password/\" class=\"forgot_password\" method=\"post\" name=\"passwordform\" id=\"passwordform\" style=\"display:none\" novalidate=\"novalidate\">\n          <h3>Forgot Password</h3>\n          <div class=\"field-wrapper\">\n            <div class=\"field-text\">Email:</div>\n            <input name=\"emailaddress\" type=\"text\" class=\"login-field\" id=\"emailaddress\">\n          </div>\n          <div class=\"bottom\">\n            <button type=\"submit\" class=\"reminder-button\"><img src=\"./bi-x_files/send-reminder-button.png\" alt=\"Send-Reminder\" width=\"126\" height=\"30\" class=\"log-in-button\"></button>\n            <div style=\"clear:both\"></div>\n            <a href=\"https://bidev.business.nd.edu/login/\" rel=\"login\" class=\"linkform\">Suddenly remebered? Log in here</a> \n            \n            <div class=\"clear\"></div>\n          </div>\n        </form>\n        \n        <form action=\"https://bidev.business.nd.edu/password/\" class=\"get_started\" method=\"post\" name=\"getstartedform\" id=\"getstartedform\" style=\"display:none\">\n          <h3>Enter your email address below to get started</h3>\n          <p>After you submit your email address below, you will be sent information about accessing our system.</p>\n          <div class=\"field-wrapper\">\n            <div class=\"field-text\">Email:</div>\n            <input name=\"emailaddress\" type=\"text\" class=\"login-field\" id=\"emailaddress\">\n          </div>\n          <div class=\"bottom\">\n            <button type=\"submit\" class=\"reminder-button\"><img src=\"./bi-x_files/get-started-button.png\" alt=\"Get Started\" width=\"126\" height=\"30\" class=\"log-in-button\"></button>\n            <div style=\"clear:both\"></div>\n            <a href=\"https://bidev.business.nd.edu/login/\" rel=\"login\" class=\"linkform\">Return to login form</a> \n            \n            <div class=\"clear\"></div>\n          </div>\n        </form>\n      </div>\n      <div class=\"clear\"></div>\n    </div>\n  </div>\n  <!-- END #content -->\n  <footer id=\"footer\" class=\"vcard\" role=\"contentinfo\">\n    <p id=\"copyright\" class=\"url fn org\"> <a href=\"http://nd.edu/copyright/\">Copyright</a> © 2007-2011 <a href=\"http://nd.edu/\" class=\"org\">University of Notre Dame</a>, Notre Dame, IN 46556 <a href=\"https://bidev.business.nd.edu/\">[Map]</a></p>\n    <p id=\"contact-info\" class=\"adr\"><span class=\"tel\"><span class=\"type\">Phone</span> 574-631-5000 &nbsp;&nbsp;<a href=\"https://bidev.business.nd.edu/\">Contact</a>&nbsp;&nbsp;<a href=\"https://bidev.business.nd.edu/\">Employment</a>&nbsp;&nbsp;<a href=\"https://bidev.business.nd.edu/\">ND Alert</a></span></p>\n    <p class=\"adr\">&nbsp;</p>\n    <a href=\"http://nd.edu/\" id=\"ndmark\"><img src=\"./bi-x_files/ndmark300.png\" class=\"ndmark\" alt=\"University of Notre Dame\"></a> </footer>\n</div>\n<!-- END #wrapper -->\n\n<script src=\"./bi-x_files/jquery-ui.min.js\" type=\"text/javascript\"></script> \n<script src=\"./bi-x_files/jquery.validate.min.js\" type=\"text/javascript\"></script>\n<script src=\"./bi-x_files/jquery.watermark.min.js\" type=\"text/javascript\"></script>\n<script src=\"./bi-x_files/site.js\" type=\"text/javascript\"></script>\n<script src=\"./bi-x_files/jquery.tooltip.js\" type=\"text/javascript\"></script>\n<script src=\"./bi-x_files/becomingirish.js\" type=\"text/javascript\"></script>\n<script type=\"text/javascript\">\n\n  var _gaq = _gaq || [];\n  _gaq.push(['_setAccount', 'UA-722404-24']);\n  _gaq.push(['_setDomainName', '.nd.edu']);\n  _gaq.push(['_trackPageview']);\n\n  (function() {\n    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;\n    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';\n    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);\n  })();\n\n</script>\n<!-- The JavaScript --> \n<script src=\"./bi-x_files/validate_form.js\" type=\"text/javascript\"></script> \n<script src=\"./bi-x_files/swapform.js\" type=\"text/javascript\"></script>\n\n\nsrc=\"./bi-x_files",
+			"<!DOCTYPE html>\n<!-- saved from url=(0059)https://bidev.business.nd.edu/login/?returnurl=/&logout=yes -->\n<html class=\"\" lang=\"en\"><!--<![endif]--><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n\n<meta charset=\"utf-8\">\n<meta name=\"author\" content=\"ENR // OPAC // University of Notre Dame\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0\">\n\n<title>University of Notre Dame // Becoming Irish Login</title>\n<link rel=\"shortcut icon\" href=\"https://bidev.business.nd.edu/favicon.ico\">\n<link rel=\"apple-touch-icon\" href=\"https://bidev.business.nd.edu/stylesheets/images/nd-iphone.png\">\n<!--[if lt IE 9]><script src=\"//html5shim.googlecode.com/svn/trunk/html5.js\"></script><![endif]-->\n<link href=\"./bi-x_files/ndt.css\" rel=\"stylesheet\" type=\"text/css\">\n\n<script type=\"text/javascript\" async=\"\" src=\"./bi-x_files/ga.js\"></script><script type=\"text/javascript\" async=\"\" id=\"ndnetworkbarscript\" data-width=\"960px\" src=\"./bi-x_files/saved_resource\"></script><script src=\"./bi-x_files/jquery.min.js\" type=\"text/javascript\"></script> \n<script src=\"./bi-x_files/ndt.js\" type=\"text/javascript\"></script>\n\n<script type=\"text/javascript\">var ndn = document.createElement(\"script\"); ndn.type = \"text/javascript\";\nndn.async = true; ndn.id = \"ndnetworkbarscript\";\nndn.setAttribute(\"data-width\",\"960px\");\nndn.src = \"//nd.edu/brandbar/\";\nvar s = document.getElementsByTagName(\"script\")[0]; s.parentNode.insertBefore(ndn, s);</script>\n\n\n\n<script src=\"./bi-x_files/cufon-yui.js\" type=\"text/javascript\"></script><style type=\"text/css\">cufon{text-indent:0!important;}@media screen,projection{cufon{display:inline!important;display:inline-block!important;position:relative!important;vertical-align:middle!important;font-size:1px!important;line-height:1px!important;}cufon cufontext{display:-moz-inline-box!important;display:inline-block!important;width:0!important;height:0!important;overflow:hidden!important;text-indent:-10000in!important;}cufon canvas{position:relative!important;}}@media print{cufon{padding:0!important;}cufon canvas{display:none!important;}}</style>\n<script src=\"./bi-x_files/ChunkFive_400.font.js\" type=\"text/javascript\"></script>\n</head>\n<body id=\"login-page\">\n<div id=\"wrapper\" class=\"clearfix\">\n  <header id=\"header\" role=\"banner\" class=\"gtype blue\"> </header>\n  <div id=\"content\">\n    <div id=\"becoming-irish-logo-div\"><img src=\"./bi-x_files/becoming-irish-logo(blue-drop).png\" alt=\"Becoming Irish\"></div>\n    <div id=\"becoming-irish-text\">\n      <h3>Welcome to Becoming Irish!</h3>\n      <p>Congratulations on your acceptance to the University of Notre Dame  MBA Program! It is with great pleasure that we welcome you into the  Notre Dame family. As you begin the process of \"Becoming Irish,\"  we hope that this student guide will be a useful source of information  and will provide insight into the Notre Dame MBA Program as well as  South Bend and the surrounding communities.</p>\n    </div>\n    <div id=\"divider\"></div>\n    <div id=\"becoming-irish-login\">\n      <div id=\"form_wrapper\" class=\"form_wrapper\"> \n        \n        \n        \n        <form class=\"getStarted \" style=\"display:none\">\n          <h3>Your password has been sent</h3>\n          <div class=\"bottom\"> <a href=\"https://bidev.business.nd.edu/login/?returnurl=/&logout=yes#\" rel=\"login\" class=\"linkform\">Log in here</a> </div>\n        </form>\n        <form action=\"https://bidev.business.nd.edu/logon/\" class=\"login active\" method=\"post\" name=\"formlogin\" id=\"formlogin\" novalidate=\"novalidate\">\n        \n        <h3>Login to Becoming Irish</h3><p>Enter your username and password below. If this is your first time on the site, please <a href=\"https://bidev.business.nd.edu/forgot-password/\" rel=\"get_started\" class=\"forgot linkform\">click here</a> to get started.</p> \n          <input type=\"hidden\" name=\"returnurl\" value=\"/\">\n          <input type=\"hidden\" name=\"code\" value=\"\">\n          <input type=\"hidden\" name=\"userID\" value=\"0\">\n          \n            <input type=\"hidden\" name=\"currentuser\" value=\"1\" id=\"currentuser\">\n            <div class=\"field-wrapper\">\n              <div class=\"field-text\">Email:</div>\n              <input name=\"email\" type=\"text\" class=\"login-field\" id=\"email\">\n            </div>\n            \n          <div class=\"field-wrapper\">\n            <div class=\"field-text\">Password:</div>\n            <input name=\"password\" type=\"password\" class=\"login-field\" id=\"password\">\n          </div>\n          \n          <div class=\"bottom\">\n            <label><a href=\"https://bidev.business.nd.edu/forgot-password/\" rel=\"forgot_password\" class=\"forgot linkform\">Forgot your password?</a></label>\n            <button type=\"submit\" class=\"login-button\"><img src=\"./bi-x_files/log-in-button.png\" alt=\"Log-in\" width=\"84\" height=\"30\" class=\"log-in-button\"></button>\n            <div style=\"clear:both\"></div>\n            <div class=\"clear\"></div>\n          </div>\n           \n        </form>\n        <form action=\"https://bidev.business.nd.edu/password/\" class=\"forgot_password\" method=\"post\" name=\"passwordform\" id=\"passwordform\" style=\"display:none\" novalidate=\"novalidate\">\n          <h3>Forgot Password</h3>\n          <div class=\"field-wrapper\">\n            <div class=\"field-text\">Email:</div>\n            <input name=\"emailaddress\" type=\"text\" class=\"login-field\" id=\"emailaddress\">\n          </div>\n          <div class=\"bottom\">\n            <button type=\"submit\" class=\"reminder-button\"><img src=\"./bi-x_files/send-reminder-button.png\" alt=\"Send-Reminder\" width=\"126\" height=\"30\" class=\"log-in-button\"></button>\n            <div style=\"clear:both\"></div>\n            <a href=\"https://bidev.business.nd.edu/login/\" rel=\"login\" class=\"linkform\">Suddenly remebered? Log in here</a> \n            \n            <div class=\"clear\"></div>\n          </div>\n        </form>\n        \n        <form action=\"https://bidev.business.nd.edu/password/\" class=\"get_started\" method=\"post\" name=\"getstartedform\" id=\"getstartedform\" style=\"display:none\">\n          <h3>Enter your email address below to get started</h3>\n          <p>After you submit your email address below, you will be sent information about accessing our system.</p>\n          <div class=\"field-wrapper\">\n            <div class=\"field-text\">Email:</div>\n            <input name=\"emailaddress\" type=\"text\" class=\"login-field\" id=\"emailaddress\">\n          </div>\n          <div class=\"bottom\">\n            <button type=\"submit\" class=\"reminder-button\"><img src=\"./bi-x_files/get-started-button.png\" alt=\"Get Started\" width=\"126\" height=\"30\" class=\"log-in-button\"></button>\n            <div style=\"clear:both\"></div>\n            <a href=\"https://bidev.business.nd.edu/login/\" rel=\"login\" class=\"linkform\">Return to login form</a> \n            \n            <div class=\"clear\"></div>\n          </div>\n        </form>\n      </div>\n      <div class=\"clear\"></div>\n    </div>\n  </div>\n  <!-- END #content -->\n  <footer id=\"footer\" class=\"vcard\" role=\"contentinfo\">\n    <p id=\"copyright\" class=\"url fn org\"> <a href=\"http://nd.edu/copyright/\">Copyright</a> © 2007-2011 <a href=\"http://nd.edu/\" class=\"org\">University of Notre Dame</a>, Notre Dame, IN 46556 <a href=\"https://bidev.business.nd.edu/\">[Map]</a></p>\n    <p id=\"contact-info\" class=\"adr\"><span class=\"tel\"><span class=\"type\">Phone</span> 574-631-5000 &nbsp;&nbsp;<a href=\"https://bidev.business.nd.edu/\">Contact</a>&nbsp;&nbsp;<a href=\"https://bidev.business.nd.edu/\">Employment</a>&nbsp;&nbsp;<a href=\"https://bidev.business.nd.edu/\">ND Alert</a></span></p>\n    <p class=\"adr\">&nbsp;</p>\n    <a href=\"http://nd.edu/\" id=\"ndmark\"><img src=\"./bi-x_files/ndmark300.png\" class=\"ndmark\" alt=\"University of Notre Dame\"></a> </footer>\n</div>\n<!-- END #wrapper -->\n\n<script src=\"./bi-x_files/jquery-ui.min.js\" type=\"text/javascript\"></script> \n<script src=\"./bi-x_files/jquery.validate.min.js\" type=\"text/javascript\"></script>\n<script src=\"./bi-x_files/jquery.watermark.min.js\" type=\"text/javascript\"></script>\n<script src=\"./bi-x_files/site.js\" type=\"text/javascript\"></script>\n<script src=\"./bi-x_files/jquery.tooltip.js\" type=\"text/javascript\"></script>\n<script src=\"./bi-x_files/becomingirish.js\" type=\"text/javascript\"></script>\n<script type=\"text/javascript\">\n\n  var _gaq = _gaq || [];\n  _gaq.push(['_setAccount', 'UA-722404-24']);\n  _gaq.push(['_setDomainName', '.nd.edu']);\n  _gaq.push(['_trackPageview']);\n\n  (function() {\n    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;\n    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';\n    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);\n  })();\n\n</script>\n<!-- The JavaScript --> \n<script src=\"./bi-x_files/validate_form.js\" type=\"text/javascript\"></script> \n<script src=\"./bi-x_files/swapform.js\" type=\"text/javascript\"></script>\n\n\n./bi-x_files/",
+			"img",
+			"welcome",
+			"program =>",
+			"126",
+			"logger",
+			"navbar-inv",
+			"#111111",
+			"navbar-inverse",
+			"navbar-inver",
+			"../assets/",
+			"und",
+			" @",
+			"mbaInterest",
+			"</td>",
+			"<td>",
+			"<br />",
+			"<br/>",
+			"@person",
+			"<br />",
+			"actions",
+			"step",
+			"attend",
+			"mba",
+			"<br />",
+			"<br/>",
+			"td",
+			"to=\"",
+			"subject",
+			"email",
+			"mba",
+			"attributes.email",
+			"mba",
+			"mba/",
+			"msb",
+			"cfmail",
+			"reinit",
+			"technical",
+			"mba",
+			"form",
+			"template",
+			"form",
+			"template",
+			"template=",
+			"template-\"\"",
+			"mba.business@nd.edu",
+			"/n",
+			"'",
+			"#attributes.email#",
+			"room",
+			"L049",
+			"jarp",
+			"Jonathan",
+			"jarp"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"\"../",
+			"href=\"../",
+			"##",
+			"",
+			"SqlDbFields",
+			"system_",
+			"address_type = FactoryGirl.create(:address_type)",
+			"address_type",
+			"System::",
+			"\"",
+			"x64",
+			"instantclient_11_2",
+			"11_2instantclient_11_2",
+			"11_2",
+			"instantclient11_2",
+			"src=\"/assets",
+			"/assets/",
+			"#001329",
+			"",
+			"@student",
+			"",
+			"div",
+			"msb.business@nd.edu",
+			"\\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 38.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 235.0
+	},
+	"replace":
+	{
+		"height": 76.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 229.0,
+	"status_bar_visible": true
+}

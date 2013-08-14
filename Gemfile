@@ -16,13 +16,14 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
   
 end
-
+=begin
 group :development, :test do
 	#gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
 	gem 'guard-test'
 	gem 'growl'
 	gem 'ruby-prof'
 end
+=end
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
