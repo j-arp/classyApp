@@ -27,6 +27,15 @@ group :development, :test do
 	gem 'ruby-prof'
 end
 
+group :production do 
+	gem 'pg'
+	gem 'libv8'
+	gem 'json'
+	gem 'less'
+	gem 'less-rails'
+	gem 'therubyracer'
+end
+
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
