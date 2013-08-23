@@ -1,5 +1,10 @@
 <h1>Notes on <%= @student.full_name %></h1>
+<div class="row-fluid">
+<div class="span12">
 
+<%= render @student %>
+
+<div class="span7">
 <% @notes.each do |note| %>
     <div class="well">
     <%= note.content %>
@@ -12,6 +17,10 @@
 
   </div>
 <% end %>
+
+</div>
+</div>
+</div>
 <div id="bottom-actions">
   <%= link_to 'New Note', new_student_note_path, :class => "btn primary-btn" %>
   <%= link_to "#{@student.full_name}", @student, :class => "btn primary-btn" %>

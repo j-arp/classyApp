@@ -6,7 +6,13 @@
 </div>
 
 <div class="span12">
-<%= render  @students %>
+	
+	<% @students.each do | student | %>
+		<div class="span4">
+		<%= render  student %>
+		</div
+	<% end %>
+
 </div>
 
 <div id="bottom-actions">
