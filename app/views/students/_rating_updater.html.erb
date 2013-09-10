@@ -1,0 +1,6 @@
+
+
+<%= form_for student, :remote=>true, :html => {:class => 'rating-form'} do | f| %>
+    <%= f.select :rating, @ratings,{},{ :class => "single-select" }%>
+    <%= f.submit "Update" %>
+  <% end %>

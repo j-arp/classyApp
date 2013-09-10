@@ -8,9 +8,10 @@ class Student < ActiveRecord::Base
   has_many :teams, :through => :members
   has_many :notes
 
-  attr_accessible :classification_id, :first, :image, :last, :netid, :section_id, :major_id, :repo, :nickname
+  attr_accessible :classification_id, :first, :image, :last, :netid, :section_id, :major_id, :repo, :nickname, :is_active, :rating
 
   scope :assigned, :joins => (:members) 
+  default_scope {where(:is_active => true)}
   
 #scope :with_cd_player, joins(:cars).where('cars.radio_id is not null')
   
@@ -18,8 +19,11 @@ class Student < ActiveRecord::Base
     assigned_ids = Student.assigned.pluck(:id)
     unassigned = Student.find(:all, :conditions => ['id not in (?)', assigned_ids])
     #Topic.find(:all, :conditions => ['forum_id not in (?)', @forums.map(&:id)])
+  end
 
-
+  def destroy
+    self.is_active = false;
+    self.save
   end
 
   def full_name
