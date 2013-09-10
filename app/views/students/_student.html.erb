@@ -1,8 +1,23 @@
-<div class="span3 well student-well <% unless defined?(minimize_links).nil? %>well-nested <% end %>">  
+<style>
+  .single-select{width:100px;}
+  </style>
+
+<div class="well student-well <% unless defined?(minimize_links).nil? %>well-nested <% end %>">  
 	<h3><%= link_to student.full_name, student_path(student) %></h3>
 
 	<%= image_tag student.image_url, :width => 100 %>
+
+
+   <div class="row-fluid">
+    <%= render :partial => 'rating_updater', :locals => {:student => student} %>
+  
+  </div>
+
+
+
   <div class="student-details">
+ 
+
     <p>
       <b>Netid:</b>
       <%= student.netid %>

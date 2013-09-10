@@ -52,11 +52,13 @@ class StudentsController < ApplicationController
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @student }
+      @ratings = Array(10.downto 1)
     end
   end
 
   # GET /students/1/edit
   def edit
+   
     @student = Student.find(params[:id])
   end
 
@@ -118,5 +120,6 @@ class StudentsController < ApplicationController
   def get_classifications_and_majors
     @classifications = Classification.all
     @majors = Major.all
+     @ratings = Array(10.downto 1)
   end
 end

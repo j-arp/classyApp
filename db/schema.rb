@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130813185312) do
+ActiveRecord::Schema.define(:version => 20130903150637) do
 
   create_table "classifications", :force => true do |t|
     t.string   "name"
@@ -98,6 +98,8 @@ ActiveRecord::Schema.define(:version => 20130813185312) do
     t.string   "preferred_name"
     t.string   "nickname"
     t.integer  "major_id"
+    t.boolean  "is_active"
+    t.integer  "rating"
   end
 
   add_index "students", ["section_id"], :name => "index_students_on_section_id"

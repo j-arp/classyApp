@@ -4,17 +4,17 @@
 	<%= link_to "View as list", student_list_path %> | 
 	<%= link_to "Add Student", new_student_path %>
 </div>
-
+<div class="container-fluid">
 <div class="span12">
 	
 	<% @students.each do | student | %>
-		<div class="span4">
+		<div class="student-grid-cell span4">
 		<%= render  student %>
-		</div
+		</div>
 	<% end %>
 
 </div>
-
+</div>
 <div id="bottom-actions">
 	<%= link_to 'New Student', new_student_path %>
 </div>

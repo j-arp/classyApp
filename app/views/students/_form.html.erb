@@ -11,6 +11,8 @@
     </div>
   <% end %>
 
+
+
   <div class="field">
     <%= f.label :first %>
     <%= f.text_field :first %>
@@ -30,6 +32,12 @@
     <%= f.text_field :netid %>
   </div>
   
+  
+  <div class="field">
+    <%= f.label :rating %>
+    <%= f.select :rating, @ratings %>
+  </div>
+
   <div class="field">
     <%= f.label :major %>
     <%= f.collection_select :major_id, @majors, :id, :name %>
@@ -39,6 +47,7 @@
     <%= f.label :classification %>
     <%= f.collection_select :classification_id, @classifications, :id, :name %>
   </div>
+  
   <div class="field">
     <%= f.label :image_file %>
     <%= f.file_field :image_file %>
@@ -48,9 +57,14 @@
     <%= f.collection_select :section_id, Section.all, :id, :to_s %>
   </div>
 
-<div class="field">
+  <div class="field">
     <%= f.label :repo %>
     <%= f.text_field :repo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :is_active %>
+    <%= f.check_box :is_active %>
   </div>
 
   <div class="actions">
