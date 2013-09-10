@@ -11,7 +11,7 @@ class Student < ActiveRecord::Base
   attr_accessible :classification_id, :first, :image, :last, :netid, :section_id, :major_id, :repo, :nickname, :is_active, :rating
 
   scope :assigned, :joins => (:members) 
-  default_scope {where(:is_active => true)}
+  #default_scope {where(:is_active => true)}
   
 #scope :with_cd_player, joins(:cars).where('cars.radio_id is not null')
   
