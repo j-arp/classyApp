@@ -16,7 +16,7 @@
         
        <div class="row" id="row-<%= i %>" >
            <% @rows[i].each do | seat | %>
-                <div class="seat inactive" seat="<%= seat.id %>"><%= seat.id %></div>
+                <div class="seat inactive" seat-id="<%= seat.id %>"><%= seat.id %></div>
            <% end %>
         </div>
     <% end %>
@@ -57,7 +57,6 @@
             snapTolerance: 50, 
             snapMode: "both",
             opacity: 0.35,
-           
             }
         
         );
@@ -87,12 +86,25 @@
 
                 var student = ui.draggable[0];
                 var studentid = $(student).attr('id');
-               
-                
+                var seatid = $div.attr('seat-id');
+
+                var xhrUrl = '/seats/' + seatid + '/assign/' +studentid;
+
+                console.log(xhrUrl);
+
                 var msg = "added " + studentid + " to " + $(this).attr('seat');
                 $('#status-message').html(msg);
                 
                 $div.html("").append('<div class="student-icon">' + $(student).html() + '</div>');
+               
+               $.ajax({
+                      type: "GET",
+                      url: xhrUrl,
+                      data: { }
+                    }).done(function( msg ) {
+                      alert( "Data Saved: " + msg );
+                    });
+
                 $(student).fadeOut();
                 $div.removeClass('active');
                 $div.removeClass('inactive');

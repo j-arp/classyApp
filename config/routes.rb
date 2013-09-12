@@ -6,6 +6,9 @@ ClassyApp::Application.routes.draw do
   get "/logout" => 'session#logout'
   match "/seats/generate" => 'seats#generate'
 
+  match "/seats/:id/assign/:student_id" => 'seats#assign'
+  match "/seats/:id/unassign" => 'seats#unassign'
+
   resources :seats
   resources :classrooms
   resources :users

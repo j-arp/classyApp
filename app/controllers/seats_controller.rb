@@ -1,6 +1,19 @@
 class SeatsController < ApplicationController
   # GET /seats
   # GET /seats.json
+
+
+  def assign
+    puts 'assign student!'
+    @seat = Seat.find(params[:id])
+    @seat.student_id = params[:student_id]
+    @seat.save
+
+    puts @seat
+
+    render json: @seat
+
+  end
   
   def generate
     classroom = Classroom.last
@@ -68,6 +81,19 @@ class SeatsController < ApplicationController
       end
     end
   end
+
+
+  def unassign
+    @seat = Seat.find(params[:id])
+
+    @seat.student_id = nil
+    @seat.save
+
+    render json: @seat
+
+  end
+
+
 
   # PUT /seats/1
   # PUT /seats/1.json
