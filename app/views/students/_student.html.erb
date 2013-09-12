@@ -35,11 +35,14 @@
       <b>Section:</b>
       <%= student.section %>
     </p>
+
     <% unless student.notes.empty? %>
       <p><%= link_to "Read #{student.notes.count} Notes", student_notes_path(student) %> </p>
       <% else %>
       <p>No notes for <%= student.full_name %> yet.</p>
     <% end %>
+
+    <p>Seat: <%= student.seat %></p>
   </div>
 
 <div class="well-actions">

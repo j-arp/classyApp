@@ -11,11 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130903150637) do
+ActiveRecord::Schema.define(:version => 20130911172948) do
 
   create_table "classifications", :force => true do |t|
     t.string   "name"
     t.integer  "year"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "classrooms", :force => true do |t|
+    t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -64,6 +70,17 @@ ActiveRecord::Schema.define(:version => 20130903150637) do
   end
 
   add_index "notes", ["student_id"], :name => "index_notes_on_student_id"
+
+  create_table "seats", :force => true do |t|
+    t.integer  "row"
+    t.integer  "position"
+    t.integer  "student_id"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+    t.integer  "classroom_id"
+  end
+
+  add_index "seats", ["student_id"], :name => "index_seats_on_student_id"
 
   create_table "sections", :force => true do |t|
     t.string   "name"

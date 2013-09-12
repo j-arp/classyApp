@@ -4,6 +4,7 @@ class Student < ActiveRecord::Base
   belongs_to :section
   belongs_to :classification
   belongs_to :major
+  has_one :seat
   has_many :members
   has_many :teams, :through => :members
   has_many :notes
@@ -15,6 +16,10 @@ class Student < ActiveRecord::Base
   
 #scope :with_cd_player, joins(:cars).where('cars.radio_id is not null')
   
+  def to_s
+    full_name
+  end
+
   def self.unassigned 
     assigned_ids = Student.assigned.pluck(:id)
     unassigned = Student.find(:all, :conditions => ['id not in (?)', assigned_ids])

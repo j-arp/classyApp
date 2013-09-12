@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  row: 1
+  position: 1
+  student: 
+
+two:
+  row: 1
+  position: 1
+  student: 

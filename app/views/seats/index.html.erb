@@ -1,0 +1,32 @@
+<h1>Listing seats</h1>
+
+<table>
+  <tr>
+    <th>Classroom</th>
+    <th>Row</th>
+    <th>Position</th>
+    <th>Student</th>
+    
+    <th></th>
+    <th></th>
+    <th></th>
+  
+  </tr>
+
+<% @seats.each do |seat| %>
+  <tr>
+    <td><%= seat.classroom %></td>
+    <td><%= seat.row %></td>
+    <td><%= seat.position %></td>
+    <td><%= seat.student %></td>
+
+    <td><%= link_to 'Show', seat %></td>
+    <td><%= link_to 'Edit', edit_seat_path(seat) %></td>
+    <td><%= link_to 'Destroy', seat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Seat', new_seat_path %>

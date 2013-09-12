@@ -4,3 +4,68 @@ p.program-details{min-height:10px}
 
 .student-details{border-left:thin solid #ececec; margin:10px 0px 0px 10px; padding:5px;}
 
+/* Clasroom Seating Chart */
+
+ 
+  div.student-icon, div.seat {
+    border: thin solid #CCCCCC;
+    float: left;
+    margin-right: 10px;
+    padding: 1px;
+    width: 125px;
+    height: 50px;
+    font-size: .9em;
+    }
+    div.student-icon{background-color: #fff}
+
+    div#students{float:right; width:33%; background-color: #ececec; border:thin solid #ccc;}    
+    div#status-message{float:right; width:33%; min-height: 25px; text-align: center; font-style: italic;}
+        div#students>div.student-icon{margin:1px;}
+        div.student-icon img{width:45px; background-color: #fff}
+        div.student-icon > .name {
+            float: left;
+            width: 70px;
+            }
+
+div.student-icon .handle {
+    background-color: #000066;
+    float: left;
+    height: 10px;
+    margin: -1px -1px 0;
+    width: 127px;
+}
+
+
+    div#classroom{float:left; width:65%;}
+    
+
+    div.row {
+        float: left;
+        width: 24%;
+        margin-right: 1%;
+        background-color: #ccc;
+        padding: 0px;
+        margin-left: 0px;
+        }
+
+
+    div.seat {
+       float:left;
+        background-color: #eee;
+        margin: 5px;
+        height: 55px;
+        width: 130px
+        }
+
+    div.inactive{
+        border:2px solid #ccc;
+        }
+
+         div.active{
+        border:2px solid #cc0000;
+        }
+
+         div.set{
+        border:2px solid green;
+        }
+    

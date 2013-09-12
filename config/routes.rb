@@ -1,16 +1,19 @@
 ClassyApp::Application.routes.draw do
-  resources :users
 
 
   match  "/authenticate" => 'session#authenticate'
   get "/login" => 'session#prompt'
   get "/logout" => 'session#logout'
+  match "/seats/generate" => 'seats#generate'
 
+  resources :seats
+  resources :classrooms
+  resources :users
   resources :majors
   resources :members
   resources :teams
   resources :classifications
-
+  get "students/chart"   => "students#chart", :as => :student_chart
   get "students/list"   => "students#list", :as => :student_list
   get "/batch/index", :as => :new_batch
   get "/batch/svn", :as => :svn

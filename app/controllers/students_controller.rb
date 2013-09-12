@@ -21,6 +21,17 @@ class StudentsController < ApplicationController
       format.json { render json: @students }
     end
   end
+
+  def chart
+    @students = Student.all
+    @seats = Seat.all
+
+    @rows = @seats.group_by{|s| s.row}
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @students }
+    end
+  end
   # GET /students/1
   # GET /students/1.json
   def show
