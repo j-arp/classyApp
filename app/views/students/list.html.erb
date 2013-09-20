@@ -1,7 +1,8 @@
 <h1><%= @students.count %> Students</h1>
 
 <div id="top-actions">
-    <%=  link_to "View Students", students_path %>
+    <%=  link_to "View Students", students_path %> | 
+    <%= link_to "View Seating Chart", student_chart_path %> | 
 </div>
 
 <table class="table table-bordered table-striped table-hover">

@@ -1,6 +1,4 @@
-<style>
-  .single-select{width:100px;}
-  </style>
+
 
 <div class="well student-well <% unless defined?(minimize_links).nil? %>well-nested <% end %>">  
 	<h3><%= link_to student.full_name, student_path(student) %></h3>
@@ -28,12 +26,14 @@
       <b>Section:</b>
       <%= student.section %>
     </p>
-
+<p>
     <% unless student.notes.empty? %>
-      <p><%= link_to "Read #{student.notes.count} Notes", student_notes_path(student) %> </p>
+      <%= link_to "Read #{student.notes.count} Notes", student_notes_path(student) %> 
       <% else %>
-      <p>No notes for <%= student.full_name %> yet.</p>
+      No notes for <%= student.full_name %> yet.   
     <% end %>
+    <%= link_to "[ + ]", "/students/#{student.netid}/notes/new" %>
+</p>    
 
     <p>Seat: <%= student.seat %></p>
   <p>Status: <%= student.is_active %></p>

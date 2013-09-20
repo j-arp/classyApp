@@ -23,6 +23,12 @@ select.skinny{width:100px;}
 textarea{width:96%}
 
 
+div.student-well, div.team-well {
+    float: left;
+    margin-right: 10px;
+    padding: 5px;
+    width: 30%;
+}
 
 div.well{background-color: #f9f9f9; border: thin solid #eee; box-shadow: 3px 3px 10px #ccc; float:left;}
 div.well-nested{background-color: #f3f3f3; box-shadow: none;}
@@ -36,7 +42,9 @@ div.well-links, div.well-actions{
 		border-top:thin solid #ececec; width:96%; padding:10px 0; 
 		text-align:center; 
 		}
-div.student-well, div.team-well{padding:7px; float:left;}
+
+
+
 div.form-actions{background-color: none; padding:0px; margin: 0px 0px 0px 125px;}
 
 a.btn {color: #000}

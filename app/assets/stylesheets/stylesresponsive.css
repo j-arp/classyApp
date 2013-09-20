@@ -28,6 +28,10 @@
 @media (max-width: 979px) {
 	.over-979{display:none;}
 	.under-979{display:table-cell;}
+
+div.student-well, div.team-well {
+ 	    width: 45%;
+	}
 }
 
 
@@ -36,6 +40,14 @@
 	#header h1{clear:none;}
 	.over-680{display:none;}
 	.under-680{display:table-cell;}
+
+	div.student-well, div.team-well {
+ 	    width: 98%;
+		}
+
+		
+		a.btn{width:85%; margin-bottom:2px;}
+	
 }
 
 @media (max-width: 480px) {
@@ -43,5 +55,7 @@
 	label{width:100%; text-align: left;}
 	.over-480{display:none;}
 	.under-480{display:table-cell;}
+
+	
 }
 

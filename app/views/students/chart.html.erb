@@ -1,7 +1,9 @@
 <h1><%= @students.count %> Students // Seating chart</h1>
 
 <div id="top-actions">
-    <%=  link_to "View Students", students_path %> <%=  link_to "Assign Seats", student_assign_chart_path %> 
+    <%=  link_to "View Students", students_path %> | 
+    <%= link_to "View as list", student_list_path %> | 
+    <%=  link_to "Assign Seats", student_assign_chart_path %> 
 </div>
 
 

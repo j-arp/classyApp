@@ -2,18 +2,19 @@
 
 <div id="top-actions">
 	<%= link_to "View as list", student_list_path %> | 
+	<%= link_to "View Seating Chart", student_chart_path %> | 
 	<%= link_to "Add Student", new_student_path %>
 </div>
-<div class="container-fluid">
-<div class="span12">
+<div class="row-fluid">
+
 	
 	<% @students.each do | student | %>
-		<div class="student-grid-cell span4">
+		
 		<%= render  student %>
-		</div>
+		
 	<% end %>
 
-</div>
+
 </div>
 <div id="bottom-actions">
 	<%= link_to 'New Student', new_student_path %>
