@@ -18,7 +18,9 @@ p.program-details{min-height:10px}
     }
     div.student-icon{background-color: #fff}
 
-    div#students{float:right; width:33%; background-color: #ececec; border:thin solid #ccc;}    
+    div#students{float:right; width:33%; background-color: #ececec; border:thin solid #ccc; min-height:200px;}    
+    
+
     div#status-message{float:right; width:33%; min-height: 25px; text-align: center; font-style: italic;}
         div#students>div.student-icon{margin:1px;}
         div.student-icon img{width:45px; background-color: #fff}

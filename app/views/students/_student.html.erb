@@ -8,13 +8,6 @@
 	<%= image_tag student.image_url, :width => 100 %>
 
 
-   <div class="row-fluid">
-    <%= render :partial => 'rating_updater', :locals => {:student => student} %>
-  
-  </div>
-
-
-
   <div class="student-details">
  
 
@@ -43,6 +36,8 @@
     <% end %>
 
     <p>Seat: <%= student.seat %></p>
+  <p>Status: <%= student.is_active %></p>
+
   </div>
 
 <div class="well-actions">

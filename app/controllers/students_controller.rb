@@ -23,6 +23,18 @@ class StudentsController < ApplicationController
   end
 
   def chart
+    @students = Student.for_chart
+    @charted = @students.group_by{|s| s.seat.row}
+    @seats = Seat.all
+    @rows = @seats.group_by{|s| s.row}
+    
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @students }
+    end
+  end
+
+   def assign_chart
     @students = Student.all
     @seats = Seat.all
 

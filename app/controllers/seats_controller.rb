@@ -5,13 +5,21 @@ class SeatsController < ApplicationController
 
   def assign
     puts 'assign student!'
+    current_seats = Seat.find_all_by_student_id(params[:student_id])
+    @response = {current_seats: current_seats}
+    
+    current_seats.each do | s |
+      s.student_id = nil
+      s.save
+    end
+
     @seat = Seat.find(params[:id])
     @seat.student_id = params[:student_id]
     @seat.save
-
+    
     puts @seat
 
-    render json: @seat
+    render json: @response
 
   end
   
@@ -21,13 +29,16 @@ class SeatsController < ApplicationController
     rowArray = Array(1..4)
     
     rowArray.each do | r | 
-      posArray = Array(1..10)
+      posArray = Array(1..8)
 
       posArray.each do | p | 
         Seat.create!(:row=>r, :position=>p, :classroom_id => classroom.id)
       end
 
     end
+
+    render json: true
+
   end
 
   def index
@@ -93,6 +104,12 @@ class SeatsController < ApplicationController
 
   end
 
+ def clear
+    
+    Seat.update_all(:student_id => nil)
+    render json: true
+
+  end
 
 
   # PUT /seats/1

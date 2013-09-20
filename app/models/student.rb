@@ -9,15 +9,37 @@ class Student < ActiveRecord::Base
   has_many :teams, :through => :members
   has_many :notes
 
-  attr_accessible :classification_id, :first, :image, :last, :netid, :section_id, :major_id, :repo, :nickname, :is_active, :rating
+  attr_accessible :classification_id, :first, :image, :last, :netid, :section_id, :major_id, :repo, :nickname, :is_active, :rating, :grade
+  
 
+ default_scope { active.alpha }
+#default_scope { where(:is_active => true)}
+
+  scope :active, where(:is_active => true)
+  scope :alpha, order(:last)
+  scope :chart, :joins => (:seats) 
   scope :assigned, :joins => (:members) 
-  default_scope {where(:is_active => true)}
   
-#scope :with_cd_player, joins(:cars).where('cars.radio_id is not null')
-  
-  def to_s
-    full_name
+
+  def temperature
+
+    if grade.to_i > 90
+      temp = "green"
+    elsif grade.to_i > 80
+      temp = "blue"
+    elsif grade.to_i > 70
+      temp = "orange"
+    else
+      temp = "red"  
+    end
+
+    return temp 
+  end
+
+  def self.for_chart
+    #@result = DogTag.find(:all, :joins => :dog, :order => 'dogs.name')
+    Student.find(:all, :joins => :seat, :order => 'seats.row')
+
   end
 
   def self.unassigned 

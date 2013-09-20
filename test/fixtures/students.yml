@@ -3,15 +3,21 @@
 jarp:
   first: Jonathan
   last: Arp
+  nickname: ""
   netid: jarp
   classification: fresh
   image: jarpold.jpg
   section: mgti1
+  grade: 91.1
+  is_active: true
 
 larp:
   first: Lily
   last: Arp
+  nickname: Lils
   netid: larp
   classification: soph
   image: larpold.jpg
   section: mgti1 
+  grade: 62
+  is_active: true

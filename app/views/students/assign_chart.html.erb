@@ -1,0 +1,194 @@
+
+<style>
+ button#reset-seats{width:90%; margin:10px 0; margin-left:5%; background-color: #000066; border:none; color:#fff; border-radius: 6px; padding:10px 0;}
+</style>
+
+<h1><%= @students.count %> Students // Seating chart</h1>
+
+<div id="top-actions">
+    <%=  link_to "View Students", students_path %>
+</div>
+
+
+
+
+
+<div id="classroom-map">
+
+  <div id="classroom">
+
+    <% (1..4).each do | i | %>
+        
+       <div class="row" id="row-<%= i %>" >
+           <% @rows[i].reverse.each do | seat | %>
+                <div class="seat inactive" seat-id="<%= seat.id %>">
+                    <%= "#{seat}" %>
+                </div>
+           <% end %>
+        </div>
+    <% end %>
+
+  </div>
+
+
+
+    <div id="status-message">
+    </div>
+
+
+  <div id="students">
+    <% @students.each do |student| %>
+    <div class="student-icon" id="<%= student.id %>">
+            <div class="handle" student-id="<%= student.id %>"></div> 
+           <%= image_tag student.image_url, :width => 76 %>
+        <div class="name">
+            <%= student.first %>
+            <%= student.last %>
+        </div>
+    </div>
+    <% end %>
+
+  <button  id="reset-seats">Regenerate Seating Chart</button>
+  </div>
+
+    
+</div>
+
+
+
+<script>
+  $(function() {
+    //$( ".student-icon" ).draggable();
+
+
+    $('button#reset-seats').click(function(){
+            setMessage("Regenerating seating chart!");
+         $.ajax({
+              type: "GET",
+              url: '/seats/generate',
+              data: { }
+            }).done(function( msg ) {
+              setMessage("Seats have been reset");
+            });
+    })
+
+     $( ".student-icon" ).draggable(
+        { 
+            snap: ".seat", 
+            snapTolerance: 50, 
+            snapMode: "both",
+            opacity: 0.35,
+            }
+        
+        );
+
+
+    $('.seat').each(function() {
+        var $div = $(this);
+        //console.log($div);
+
+        $div.droppable({
+            over: function( event, ui ) {
+                    var msg = "You can drop the student now";
+                    $('#status-message').html(msg);
+                    $div.addClass('active');
+                    $div.removeClass('inactive');
+                    $div.removeClass('set');
+                },
+
+            out: function( event, ui ) {
+                    var msg = "moving out of target";
+                    $('#status-message').html(msg);
+                    $div.removeClass('active');
+                    $div.addClass('inactive');
+                    $div.removeClass('set');
+                },
+            drop: function(event, ui) {
+
+                var student = ui.draggable[0];
+                var studentid = $(student).attr('id');
+                var seatid = $div.attr('seat-id');
+
+                var xhrUrl = '/seats/' + seatid + '/assign/' +studentid;
+
+                console.log(xhrUrl);
+
+                var msg = "added " + studentid + " to " + $(this).attr('seat');
+                $('#status-message').html(msg);
+                
+                $div.html("").append('<div class="student-icon">' + $(student).html() + '</div>');
+               
+               $.ajax({
+                      type: "GET",
+                      url: xhrUrl,
+                      data: { }
+                    }).done(function( msg ) {
+                      setMessage("Seat assigned!");
+                    });
+
+                $(student).fadeOut();
+                $div.removeClass('active');
+                $div.removeClass('inactive');
+                $div.addClass('set');
+            }
+        });
+
+    
+
+        $( ".students" ).droppable(
+            {
+                accept: ".student-icon",
+
+                drop: function( event, ui ) {
+                    var student = ui.draggable[0];
+                    var studentid = $(student).attr('id');
+
+                    console.log(student);
+
+                    $('div#students .student-icon').filter('#'+ studentid).fadeIn();
+                    //$('div#classroom .student-icon').filter('#'+ studentid).fadeOut().remove();
+
+                    student.remove();
+
+                    var msg = "removed " + studentid + " from chart";
+                    $(this).addClass("full");
+                    
+                
+                    }
+
+            });
+         
+        });
+    
+    
+
+    $('div#classroom').on("click", "div.seat div.student-icon .handle", function(){
+        
+        setStatus($(this).parent().parent(), "inactive");
+        
+        var studentID = $(this).attr('student-id');
+            //$('div#students').append( $(this).parent().parent().html() );
+            $stuDiv = $('div#students .student-icon').filter('div#' + studentID);
+            $stuDiv.animate({left:0,top:0});
+            $stuDiv.fadeTo('fast', 1);
+            $(this).parent().fadeOut().remove();
+            setMessage('remove seat for ' + studentID);
+        });
+    
+    function setStatus(obj, status){
+            var $d = obj;
+            
+            $d.removeClass('active');
+            $d.removeClass('inactive');
+            $d.removeClass('set');
+            
+            $d.addClass(status);
+            
+
+    }
+
+    function setMessage(msg){
+        $('#status-message').html(msg);
+    }
+  });
+  </script>

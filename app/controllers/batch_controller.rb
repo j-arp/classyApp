@@ -3,6 +3,39 @@ class BatchController < ApplicationController
   	@sections = Section.all
   end
 
+
+  def grades
+    @sections = Section.all
+  end
+
+  def apply
+
+   import_file = params[:file]
+     
+    unless import_file.original_filename.nil?
+       File.open(Rails.root.join('data_store/imports', import_file.original_filename), 'wb') do |file|
+          file.write(import_file.read)
+       end
+    end
+
+     importer = Grader.new
+     importer.src = Rails.root.join('data_store/imports', import_file.original_filename)
+     @students = importer.array
+
+     @students.each do | student |
+      @student = Student.find_by_netid(student[:netid])
+      @student.grade = student[:grade]
+      @student.save
+    end
+     #puts importer.content
+     #puts importer.array
+
+
+
+
+    render json: Student.all
+  end
+
   def svn
     puts "Reading config"
     puts Rails.application.config.local_svn_path

@@ -5,9 +5,13 @@ ClassyApp::Application.routes.draw do
   get "/login" => 'session#prompt'
   get "/logout" => 'session#logout'
   match "/seats/generate" => 'seats#generate'
+  match "/seats/clear" => 'seats#clear'
 
   match "/seats/:id/assign/:student_id" => 'seats#assign'
   match "/seats/:id/unassign" => 'seats#unassign'
+
+  match "/batch/grades" => "batch#grades",:as => :import_grades
+  match "/batch/apply" => 'batch#apply', :as => :process_grades
 
   resources :seats
   resources :classrooms
@@ -16,7 +20,9 @@ ClassyApp::Application.routes.draw do
   resources :members
   resources :teams
   resources :classifications
+
   get "students/chart"   => "students#chart", :as => :student_chart
+  get "students/chart/assign"   => "students#assign_chart", :as => :student_assign_chart
   get "students/list"   => "students#list", :as => :student_list
   get "/batch/index", :as => :new_batch
   get "/batch/svn", :as => :svn
