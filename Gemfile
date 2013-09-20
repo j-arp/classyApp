@@ -8,6 +8,7 @@ gem 'rails', '3.2.13'
 
 gem "friendly_id", "~> 4.0.10"
 	
+#gem 'sqlite3'
 
 
 # Gems used only for assets and not required
@@ -21,7 +22,7 @@ end
 
 group :development, :test do
 	#gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
-	gem 'sqlite3'
+	#gem 'sqlite3'
 	gem 'guard-test'
 	gem 'growl'
 	gem 'ruby-prof'

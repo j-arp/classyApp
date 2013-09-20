@@ -12,11 +12,11 @@ class BatchController < ApplicationController
 
    import_file = params[:file]
      
-    unless import_file.original_filename.nil?
+    
        File.open(Rails.root.join('data_store/imports', import_file.original_filename), 'wb') do |file|
           file.write(import_file.read)
        end
-    end
+    
 
      importer = Grader.new
      importer.src = Rails.root.join('data_store/imports', import_file.original_filename)
