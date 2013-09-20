@@ -65,7 +65,7 @@
             setMessage("Regenerating seating chart!");
          $.ajax({
               type: "GET",
-              url: '/seats/generate',
+              url: '/seats/clear',
               data: { }
             }).done(function( msg ) {
               setMessage("Seats have been reset");

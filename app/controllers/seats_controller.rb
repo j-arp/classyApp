@@ -22,7 +22,19 @@ class SeatsController < ApplicationController
     render json: @response
 
   end
-  
+
+  def clear
+    classroom = Classroom.last
+    @seats = Seat.find_all_by_classroom_id(classroom.id)
+
+    @seats.each do | seat | 
+      seat.student_id = nil
+      seat.save
+    end
+
+    render json: @seats
+
+  end
   def generate
     classroom = Classroom.last
     Seat.delete_all(:classroom_id => classroom.id)
@@ -104,12 +116,6 @@ class SeatsController < ApplicationController
 
   end
 
- def clear
-    
-    Seat.update_all(:student_id => nil)
-    render json: true
-
-  end
 
 
   # PUT /seats/1

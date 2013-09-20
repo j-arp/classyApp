@@ -1,7 +1,7 @@
 <h1><%= @students.count %> Students // Seating chart</h1>
 
 <div id="top-actions">
-    <%=  link_to "View Students", students_path %>
+    <%=  link_to "View Students", students_path %> <%=  link_to "Assign Seats", student_assign_chart_path %> 
 </div>
 
 
@@ -12,7 +12,7 @@
        <div class="row" id="row-<%= i %>" >
            <% @rows[i].reverse.each do | seat | %>
                 	<% unless seat.student.nil? %>
-                <div seat-id="<%= seat.id %>">
+                <div seat-id="<%= seat.id %>" style="background-color:<%= seat.student.temperature%>">
 	               <%= image_tag seat.student.image_url, :width => 100 %>
 	               <%= seat.student.full_name %>
 
