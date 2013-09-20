@@ -69,10 +69,10 @@ students/whenry.jpeg: students/whenry-2336d207e9f0c8dbabd0651dbf3049dd.jpeg
 students/whenry/index.jpeg: students/whenry-2336d207e9f0c8dbabd0651dbf3049dd.jpeg
 students/xnie.jpeg: students/xnie-85251622ada1a1f98b141a33a69b6598.jpeg
 students/xnie/index.jpeg: students/xnie-85251622ada1a1f98b141a33a69b6598.jpeg
-application.js: application-827fcea9a0572a336e8f214a77327b26.js
-application/index.js: application-827fcea9a0572a336e8f214a77327b26.js
-application.css: application-787e83e78cde288a559c1dc0cca7d80f.css
-application/index.css: application-787e83e78cde288a559c1dc0cca7d80f.css
+application.js: application-c2ba9a23d19f4c20de48481ac940f668.js
+application/index.js: application-c2ba9a23d19f4c20de48481ac940f668.js
+application.css: application-f22029b817a16643d153c67798ca1c0b.css
+application/index.css: application-f22029b817a16643d153c67798ca1c0b.css
 bootstraps/classyapp.sublime-project: bootstraps/classyapp.sublime-project
 bootstraps/classyapp/index.sublime-project: bootstraps/classyapp.sublime-project
 bootstraps/classyapp.sublime-workspace: bootstraps/classyapp.sublime-workspace
